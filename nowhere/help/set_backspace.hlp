@@ -1,0 +1,8 @@
+^5Help - Set Backspace
+~5USAGE: .set backspace [^5on~5/^5off~5]
+
+~5Use this command when your backspace key isn't working.
+
+~5SEE ALSO
+  ^5.help set
+

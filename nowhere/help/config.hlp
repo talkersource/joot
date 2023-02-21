@@ -1,0 +1,17 @@
+^5Help - Config
+~5USAGE: .config [^5# ~5[^5value~5]]
+~5WHERE: ^5# ~5specfies the configuration item number to change
+       ^5value ~5specfies the new configuration value
+
+~5Use this command for changing the talker configuration from online.
+
+~5Without typing any parameters, this command gives you the number mapping
+~5for each option to its value.  By typing in only a number, this command
+~5shows you the corresponding option and its value.
+
+~5Lastly, by typing in both a number and a value you change the config option
+~5to the new ^5value~5.
+
+~5SEE ALSO
+  ^5.help levels
+

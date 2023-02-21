@@ -1,0 +1,33 @@
+^5Help - Build
+~5USAGE: .build [^5create Name~5] [^5delete Name~5] [^5join +/- Name~5]
+              ~5[^5information~5] [^5rename New Name~5]
+
+~5Use this command when you wish to update a room on your talker.
+
+~5EXAMPLES
+^5.build create Barney's Lair
+  ~5Creates a room called "Barney's Lair", updates the ^5roomlink.dat ~5file,
+~5and creates a new file called "barneys_lair" in the rooms subdirectory.
+
+^5.build delete Barney's Lair~5
+  ~5Removes all references to "Barney's Lair" from the ^5roomlink.dat ~5file.
+~5The file "barneys_lair" must be deleted manually.  (Note that all users
+~5in "Barney's Lair" will be moved into "Temporary Room".)
+
+^5.build join +Barney's Lair~5
+  ~5Adds "Barney's Lair" to the list of rooms adjoined to the room you are
+~5currently in.
+
+^5.build join -Barney's Lair~5
+  ~5Removes "Barney's Lair" from the list of rooms adjoined to the room you
+~5are currently in.
+
+^5.build information~5
+  ~5Allows you enter/change the room's description.
+
+^5.build rename New Name
+  ~5Changes the current room's name to "New Name".
+
+~5SEE ALSO
+  ^5.help rset
+

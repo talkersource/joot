@@ -1,0 +1,9 @@
+^5Help - Write
+~5USAGE: .write ^5message
+~5WHERE: ^5message ~5is the message to write on the current room's message board
+
+~5Use this command when you want to write a message that everybody can .read.
+
+~5SEE ALSO
+  ^5.help read~5, ^5.help wipe
+

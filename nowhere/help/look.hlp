@@ -1,0 +1,9 @@
+^5Help - Look
+~5USAGE: .look
+
+~5Use this command when you want to see what room you're in, the room's
+~5description, the current topic, and all visible people in the room.
+
+~5SEE ALSO
+  ^5.help set~5, ^5.help hide~5, ^5.help private
+

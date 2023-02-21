@@ -1,0 +1,4 @@
+#!/bin/csh
+cat debug >> debug.log
+nohup java Joot >& debug &
+

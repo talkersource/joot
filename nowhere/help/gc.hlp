@@ -1,0 +1,6 @@
+^5Help - Gc
+~5USAGE: .gc
+
+~5Use this command when you want to go envoke the garbage collector.  This
+~5may help reduce lag.
+

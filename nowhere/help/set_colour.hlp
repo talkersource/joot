@@ -1,0 +1,9 @@
+^5Help - Set Colour
+~5USAGE: .set colour [^5on~5/^5off~5]
+
+~5Use this command when you wish to toggle between seeing colour, and not
+~5seeing colour.
+
+~5SEE ALSO
+  ^5.help set~5, ^5.help set bold
+

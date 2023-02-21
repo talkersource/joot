@@ -1,0 +1,16 @@
+^5Help - Set Email
+~5USAGE: .set email [^5new E-mail address~5]
+
+~5Use this command when you wish to set your current E-mail address.
+~5This information is displayed when a user examines you.
+
+~5To make this information visible only to Wizards, prepend an exclamation
+~5point to your address.
+
+~5EXAMPLES
+  ~5.set email morning@magmacom.com
+  ~5.set email !morning@magmacom.com
+
+~5SEE ALSO
+  ^5.help set~5, ^5.help set forward
+

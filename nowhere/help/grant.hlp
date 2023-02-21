@@ -1,0 +1,10 @@
+^5Help - Grant
+~5USAGE: .grant ^5user ~5[^5command~5]
+~5WHERE: ^5user ~5is a user you wish to give a ^5command ~5to
+
+~5Use this command when you wish to give a ^5user ~5a particular command
+~5without having to promote them.  This also grants revoked commands.
+
+~5SEE ALSO
+  ^5.help revoke
+

@@ -1,0 +1,9 @@
+^5Help - Logoffs
+~5USAGE: .logoffs
+
+~5Use this command when you want to see who the last several users that logged
+~5off were.
+
+~5SEE ALSO
+  ^5.help quit
+

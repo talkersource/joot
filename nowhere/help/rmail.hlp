@@ -1,0 +1,17 @@
+^5Help - Rmail
+~5USAGE: .rmail [^5#-##,###~5]
+~5WHERE: ^5#-##,### ~5represents the smail numbers to read
+
+~5Use this command when you want to read the smail that was left for you.
+
+~5EXAMPLES
+  ~5.rmail                  Read all of your messages
+  ~5.rmail 1-4, 26          Read messages 1 through 4 and message 26
+  ~5.rmail 5, 6, 9          Read messages 5, 6, and 9
+  ~5.rmail 24-              Read all after message 24
+  ~5.rmail -13              Read all messages up to message 13
+  ~5.rmail sent             Read last 10 messages you sent to other people
+
+~5SEE ALSO
+  ^5.help smail~5, ^5.help cmail
+

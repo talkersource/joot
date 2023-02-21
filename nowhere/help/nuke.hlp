@@ -1,0 +1,11 @@
+^5Help - Nuke
+~5USAGE: .nuke ^5user
+~5WHERE: ^5user ~5is any user
+
+~5Use this command when you want to remove a user from the Talker.  This
+~5will delete all files (smail, information, and macros) associated with
+~5the ^5user~5.
+
+~5SEE ALSO
+  ^5.help kill~5, ^5.help muzzle
+

@@ -1,0 +1,9 @@
+^5Help - Set Brief
+~5USAGE: .set brief [^5on~5/^5off~5]
+
+~5Use this command when you wish to toggle between reading room descriptions
+~5and not reading them.
+
+~5SEE ALSO
+  ^5.help set~5, ^5.help look
+

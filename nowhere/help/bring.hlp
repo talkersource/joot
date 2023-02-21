@@ -1,0 +1,10 @@
+^5Help - Bring
+~5USAGE: .bring ^5user
+~5WHERE: ^5user ~5is somebody online you wish to move
+ 
+~5Use this command when you want to forcibly move a user from their current
+~5room to your room.
+ 
+~5SEE ALSO
+  ^5.help join~5, ^5.help move
+

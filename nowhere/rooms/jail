@@ -1,0 +1,14 @@
+Access = Newbie
+Buffer = 25
+Clear = God
+Lock = Wizard
+Read = Wizard
+Review = Wizard
+Topic = Wizard
+View = Wizard
+Warp = Wizard
+Wipe = God
+Write = Wizard
+<desc>
+~5You've been arrested!  Shame, shame, shame!
+</desc>

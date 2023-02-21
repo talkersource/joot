@@ -1,0 +1,43 @@
+^5Help - Macros
+~5USAGE: .macro [^5delete~5] ^5name definition
+~5WHERE: ^5name ~5is the name of your macro
+       ^5definition ~5is what you want the macro to do
+       ^5delete ~5indicates you wish to remove the defintion for ^5name
+
+~5Use this command when you want to make, or delete short-cuts for frequently
+~5typed actions.  Type ^5.macro ~5by itself to see your current macros.  At
+~5first glance, they seem complicated.  Just try a few simple ones first and
+~5slowly work your way up.  :-)  You have to type them in exactly as shown,
+~5or they may not work.
+
+~5EASY EXAMPLES TO TRY:
+  ^2.macro laugh ; giggles and laughs.
+  ^5.laugh
+
+~5When you type ^5.laugh~5, it should show you giggling and laughing.
+
+~5HARDER EXAMPLES TO TRY:
+  ^3.macro delete laugh
+  ^2.macro laugh ; laughs her fool head off!
+  ^2.macro laugh ; laughs at what * said!
+  ^5.laugh
+  ^5.laugh you
+
+~5When you type ^5.laugh~5, it should show you laughing your fool head off.
+~5When you type ^5.laugh name~5, it should show that you are laughing at
+~5something the user said.
+
+~5DARING EXAMPLES TO TRY:
+  ^2.macro gormail .go nowhere||.rmail
+  ^2.macro gormail .go nowhere||.rmail *
+  ^5.gormail
+  ^5.go
+  ^5.gormail 1,2
+
+~5When you type ^5.gormail~5, you should be taken into a room called ^5Nowhere
+~5and then have your personal mail read to you.  If you were to type
+^5.gormail 1,2~5, it would take you to ^5Nowhere~5 and read your first 2
+~5personal mails.  Using the ^5||~5 symbol, you may execute multiple commands
+~5one after the other.  Macros may not use other macros.  (Note, you'll have
+~5to use a room name that you have access to!)
+

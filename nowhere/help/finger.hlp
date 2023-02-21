@@ -1,0 +1,10 @@
+^5Help - Finger
+~5USAGE: .finger [^5user~5]
+
+~5Use this command when you want to do a lookup on either all users online,
+~5or a particular ^5user~5.  This is a fairly expensive and as such should
+~5be used sparringly.
+
+~5SEE ALSO
+  ^5.help site
+

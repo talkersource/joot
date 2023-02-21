@@ -1,0 +1,12 @@
+^5Help - Unmuzzle
+~5USAGE: .unmuzzle ^5user
+~5WHERE: ^5user ~5is a user who you wish to unmuzzle
+
+~5Use this command when a user has agreed not to abuse the shout command
+~5any longer.  This will allow the user to shout again (unless the shout
+~5command was specifically revoked).  You may unmuzzle online and/or offline
+~5users.
+
+~5SEE ALSO
+  ^5.help muzzle~5, ^5.help stun
+

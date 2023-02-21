@@ -1,0 +1,10 @@
+^5Help - Revoke
+~5USAGE: .revoke ^5user ~5[^5command~5]
+~5WHERE: ^5user ~5is a user you wish to take a command from
+
+~5Use this command when you wish to remove ^5user's ~5access to a particular
+~5command without having to demote them.  This also revokes granted commands.
+
+~5SEE ALSO
+  ^5.help grant
+

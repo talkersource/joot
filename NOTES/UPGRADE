@@ -1,0 +1,101 @@
+-------------------------------------------------
+JOOT: The Java-based Object-Oriented Talker
+      Copyright 1996-1997 by Dave Jarvis
+-------------------------------------------------
+
+How to upgrade JOOT
+-------------------------------------------------
+Introduction.
+
+  JOOT is not easy to automatically upgrade since any changes you make can
+be to any aspect of the talker (room files, help files, data files, user
+levels, etc.).  Writing an installation program is not a task I'm prepared
+to undertake at this time.
+  Instead, this file lists the general steps of what needs to be changed
+in order to upgrade your talker to the latest version.
+
+
+Additional Help.
+
+  Remember to encorporate the changes for all versions, starting with your
+current version and ending at the top of the file.
+
+
+Explanation.
+
+  You need to look at the NOTES/WHATSNEW file to see what has changed.  Here
+is an example:
+
+1) v1.2.2  -- April 16, 1997
+2)   * .jail       puts user in Jail and allows them only to say things
+3)   * .free       puts user in Main Room, with the status they had before .jail
+4)   * .set talk   changes having to type "." before a command or not
+5)   * .system     displays system information to users; and more info. to sysops
+6)   * .bansite    now can do hard-bans on a site (NOBODY gets in)
+
+7)   * Strings (46, 363, 364, 369-378)
+8)   * Help Files (samesite, set, set_logons, set_logoffs, set_talkmode, bansite,
+                   set_picture, system, version)
+9)   * Bug Fixes (.tell, .wizcast, .examine, .link)
+10)  * RESOLVE_DNS_FOR_IP config.dat option
+
+Line 1 indicates what the latest version is, and the date it was either
+released to the public, or privately tested.  The numbering scheme used
+for versioning is as follows:
+
+  v1.2.2
+   . . .
+   | | |
+   | | +---> Bug fixes, new commands, documentation changes
+   | +-----> Public/Private releases
+   +-------> Extensive Revisions
+
+Lines 2 through 6 tell of new commands.  These are added into the file
+"nowhere/data/commands.dat".  They need to be added into your own talker's
+commands.dat file to be recognised by the talker.  If they are genuinely
+new commands, then you can update your commands.dat then issue a ".load
+command" command within the talker.  Otherwise, if they are bug fixed
+or modified commands (such as .set on line 4), you will have to shutdown
+your talker and reboot.
+
+Line 7 shows which entries have been added to (or changed in) the
+"nowhere/data/strings.dat" file.  They need to be added (or changed) into
+your own talker's strings.dat file to be recognised by the talker.  In
+this case, you need only update your own strings.dat and issue a ".load
+string" command within the talker.  It is recommended you reboot.
+
+Line 8 means that the corresponding help files have been updated, added,
+or changed.  They are located in the "nowhere/help" directory and each
+have an extension of ".hlp".  Thus to add the new "samesite.hlp" file,
+all you have to do is move it from the "nowhere/help" directory over to
+your own talker directory.  Help are re-loaded each time they are viewed.
+This means that once you copy the file, it can be used by people without
+having to issue a ".load" command.  No rebooting required.
+
+Line 9 is just to point out that certain commands have had some unwanted
+features removed.
+
+Line 10 indicates that a new option has been added to
+"nowhere/data/config.dat".  Take a peek at the file to see what your own
+config.dat file is missing.  Make the appropriate changes, then issue
+a ".load config" command from within the talker.  More information on these
+options can be found in Appendix A of the README file.
+
+If you make all the changes at once (which is the most likely scenario),
+you will want to reboot the talker.  If you reboot the talker, there is
+no need to issue any of the ".load" commands.  The ".load" command should
+be used if you've changed your strings.dat, macros.dat, commands.dat, or
+abbrs.dat from offline.  It is recommended that you use the ".tabbr" and
+".string" command for changing talker abbreviations and strings, respectively.
+
+*NEVER* change levels.dat from offline.  Use the ".levels" command from online.
+
+In general, it is a good idea to remove the files and directories for
+the "Talker" subdirectory, and then copy (or move) the new version's
+"Talker" subdirectory structure.  You will need to reboot for the changes
+to take effect.
+
+This assumes you have a basic working knowledge of your operating system.
+That is, you are able to move directories/files around, and edit files without
+(much) trouble.
+

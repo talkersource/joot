@@ -1,0 +1,15 @@
+^5Help - Commands
+~5USAGE: .commands [^5level name~5]
+~5WHERE: ^5level name ~5specfies the name of a level to view the commands
+
+~5Use this command when you see your available commands.  Optionally,
+~5you can specify the name of a given level to view the commands of (for
+~5example "God").
+
+~5For additional help on any command, merely type: ~2.help ^2command
+~5Replace ^2command ~5with the name of the command you wish to have more
+~5help on.
+
+~5SEE ALSO
+  ^5.help set
+

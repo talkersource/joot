@@ -1,0 +1,9 @@
+^5Help - Private
+~5USAGE: .private
+
+~5Use this command when you want to stop anybody else from entering the
+~5room.  To make the room public, merely issue the command again.
+
+~5SEE ALSO
+  ^5.help invite~5, ^5.help rooms
+

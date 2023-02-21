@@ -1,0 +1,10 @@
+^5Help - Quit
+~5USAGE: .quit
+
+~5Use this command when you want to leave the Talker.  If you have changed
+~5your password, or your description, it will be saved for the next time you
+~5log on.
+
+~5SEE ALSO
+  ^5.help set
+

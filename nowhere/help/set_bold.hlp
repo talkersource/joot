@@ -1,0 +1,9 @@
+^5Help - Set Bold
+~5USAGE: .set bold [^5on~5/^5off~5]
+
+~5Use this command when you wish to toggle between seeing bold (and possibly
+~5colour as well) to seeing neither.
+
+~5SEE ALSO
+  ^5.help set
+

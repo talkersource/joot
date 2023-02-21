@@ -1,0 +1,89 @@
+-------------------------------------------------
+JOOT: The Java-based Object-Oriented Talker
+      Copyright 1996-1997 by Dave Jarvis
+-------------------------------------------------
+
+Frequently Asked Questions
+-------------------------------------------------
+
+Q: Will I need a Web browser to run a JOOT talker?
+A: No.
+        You will need a Java Virtual Machine and the software/hardware
+	requirements mentioned in section 2.0 of the README file.
+
+Q: Will the users need a Web browser to use the JOOT talker?
+A: No.
+        They can use the JOOT talker without doing a single thing differently
+        than if they were using an OOT, NUTS, JATS, EW-Too, etc.  However,
+	if you wish to connect to JOOT from the Web, you may wish to look
+	into the Java-based ANSI Terminal:
+		http://www.joot.com/products.html
+
+Q: Does JOOT need lots of memory?
+A: Depends.
+	Sun's JVM, when run normally, preallocates 20MB of memory.  You can
+	reduce this by running Java as such:
+		java -oss500K -ms500K -mx1M Joot
+
+	The more users you have, the more rooms you have, and the more
+	talkers you run with JOOT will increase the amount of memory that JOOT
+	uses.  There may be ways to reduce the maximum amount of memory JOOT
+	allocates via command line switches to the JVM itself.
+
+	If you find JOOT crashes for no reason, you'll have to increase the
+	given numbers from 500K to 1M.  If it still crashes, keep increasing it
+	by 1 (e.g., 2M, 3M, 4M, etc.) until it seems stable.
+
+Q: Can I change the port that JOOT runs on?
+A: Yes.
+        Edit the "talkers.dat" file located in the joot subdirectory.  Change
+        the 5000 to the new port number.  Reboot the talker.
+
+Q: Can I create my God user from online?
+A: No.
+        You must logon as a "Newbie" user, log off, then edit your data
+        file.  If, for example, you logged on as "TopDog", then you would
+        edit the file named "nowhere/users/data/t/topdog.dat".  Change the
+        word "Newbie" to "God".  While you're there, I suggest changing
+        "thangalin.dat" to "Wizard" or "User".
+
+Q: I can't find the user I created?
+A: create.bat
+	You may need to run the create.bat file which comes with JOOT.  Log
+	in and try again.
+
+Q: What is a Java Virtual Machine (JVM)?
+A: A JVM is a piece of software which interprets Java byte-codes.
+        Imagine writing a letter to somebody in Japan: You'd have to write
+        it in Japanese.  Now imagine writing that very same letter to a
+        person in France: It would have to be written in French.
+
+        Writing a program in Java is like writing the letter in English, and
+        sending along an English to Japanese (English to French) dictionary
+        with your letter.
+
+        The JVM is analogous to the dictionary.  Without it, the Operating
+        System can not understand the Java byte-codes (that is, JOOT).
+
+Q: How do I get rid of having to use the period in front of commands?
+A: Type: .set talkmode
+
+Q: Why doesn't backspace work?
+A: Type: .set backspace
+
+Q: Why can't I see what I'm typing?
+A: Type: .set echo
+
+Q: Does JOOT have anything to do with OOT?
+A: Yes.
+        JOOT is based, for the most part, on all the ideas and code that went
+        into OOT.  The major difference is that JOOT is programmed in Java,
+        whereas OOT was programmed C++.
+
+Q: Does JOOT have anything to do with NUTS?
+A: No.
+        Everything in JOOT was written from scratch, with a few basic
+        commands stolen from OOT when possible.  It has nothing to do with
+        NUTS, save the command interface beginning with the period.  (Even
+        that may be changed from online.)
+

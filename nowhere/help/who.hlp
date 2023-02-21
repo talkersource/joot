@@ -1,0 +1,15 @@
+^5Help - Who
+~5USAGE: .who
+ 
+~5Use this command when you want to see what people are on the Talker.  The
+~5search is case insensitive.
+
+~5The ^5WAHL ~5column indicates information about a user:
+  ~5W = User is a Wizard (denoted by a ^5*~5)
+  ~5A = User is Away From the Keyboard (denoted by a ^5!~5)
+  ~5H = User is hidden (denoted by a ^5~~~5)
+  ~5L = User is linked in (denoted by a ^5+~5)
+ 
+~5SEE ALSO
+  ^5.help with
+

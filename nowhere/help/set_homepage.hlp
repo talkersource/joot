@@ -1,0 +1,19 @@
+^5Help - Set Homepage
+~5USAGE: .set homepage [^5new homepage~5]
+
+~5Use this command when you wish to set your current (or favourite) homepage
+~5on the World Wide Web.  This information is displayed when a user examines
+~5you.
+
+~5To make this information visible only to Wizards, prepend an exclamation
+~5point to your URL.
+
+~5NOTE: To display a single tilde (~~) in your homepage, use two tildes (~~~~).
+
+~5EXAMPLES
+  ~5.set homepage http://www.magmacom.com/~~morning/joot.html
+  ~5.set homepage !http://www.magmacom.com/~~morning/joot.html
+
+~5SEE ALSO
+  ^5.help set~5, ^5.help examine
+

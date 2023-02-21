@@ -1,0 +1,11 @@
+^5Help - Set Columns
+~5USAGE: .set columns [^5number~5]
+
+~5Use this command when you wish to change how many columns are on your screen.
+
+~5Without putting in a number, this command shows you what your columns are
+~5currently set to.
+
+~5SEE ALSO
+  ^5.help set
+

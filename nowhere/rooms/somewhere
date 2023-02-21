@@ -1,0 +1,30 @@
+Access = Newbie
+Buffer = 10
+Clear = User
+Lock = User
+Read = User
+Review = Newbie
+Topic = User
+View = User
+Warp = Wizard
+Wipe = Wizard
+Write = User
+<desc>
+~5This is Somewhere.  Not such a bad place once you get used to it.  Have you
+~5ever wondered how long a person can keep typing while not really thinking of
+~5anything to type?  Yet they do it nonetheless.  Well, this is my first try
+~5(after all I have to give you something to do if you're Somewhere).  If you
+~5where in Nowhere, I guess I wouldn't have to ramble on and on like this
+~5because you wouldn't expect that there.  Doing good so far.  Only eight more
+~5lines to go.  That almost sounded conclusive.  But no.  I have to keep filling
+~5the screen for you.  Keep you entertained, as it were.  Yes, I know what
+~5you're thinking ... "And you call this entertainment?"  Well, you don't have
+~5to get sassy about it.  It'll get better.  No, really, it will, because JOOT
+~5only supports so many lines of text per room description before it'll just
+~5give up.  Don't thank me now, you can do that at a much later date.  The
+~5real funny part is that I'm going to forget all about this text here because
+~5I usually have ".set brief off".  Why do I do that?  Because when I go into
+~5a room for the third time, I really don't need to get spammed with the room's
+~5description.  If anything, this room should give anybody enough reason to
+~5do that command.  Oops.  I could have stopped four lines ago.
+</desc>

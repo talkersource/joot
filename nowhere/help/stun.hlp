@@ -1,0 +1,11 @@
+^5Help - Stun
+~5USAGE: .stun ^5user
+~5WHERE: ^5user ~5is a user who you wish to stun
+
+~5Use this command when you have an obnoxious user around.  This will
+~5prevent the user from doing any command except ^5.quit~5.  You may
+~5stun online and/or offline users.
+
+~5SEE ALSO
+  ^5.help muzzle~5, ^5.help kill~5, ^5.help jail~5, ^5.help unstun
+

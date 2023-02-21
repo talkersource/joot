@@ -1,0 +1,44 @@
+-------------------------------------------------
+JOOT: The Java-based Object-Oriented Talker
+      Copyright 1996-1997 by Dave Jarvis
+-------------------------------------------------
+
+CreateUser Program
+-------------------------------------------------
+Introduction.
+
+The CreateUser provides a means to create a new account, without having
+to log into the JOOT server.  This allows you to set up a registration
+scheme from the Web.  A simple CGI script could take in the user's account
+ID and password.  The script would then use this program to create the account
+at the minimum level required to log into the JOOT server.  The user is then
+free to log in, using the account that was created.
+
+Requires a JVM conforming to the 1.1 specification, or better.
+
+
+Usage.
+
+The CreateUser program is written in Java.  It must reside in the same
+directory as the JOOT program.  The syntax is as follows:
+
+  java CreateUser TopDog hamburger
+
+A new user named "TopDog" would be created for each talker listed in the
+"talkers.dat" file.  The file created would be: users/t/topdog.dat
+
+The program is secure in that it knows the minimum level required to log into
+the JOOT server.  Users get created at that level.
+
+
+Exit Value.
+
+  CreateUser exits with the following return values:
+
+  0 - Account created
+  1 - Account already exists
+  2 - Invalid user name (unacceptable characters, spaces, or numbers used)
+  3 - User name too short
+  4 - Password too short
+  5 - All other errors (memory, out of disk space, bad file permissions, etc.)
+

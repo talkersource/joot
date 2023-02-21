@@ -1,0 +1,22 @@
+-------------------------------------------------
+JOOT: The Java-based Object-Oriented Talker
+      Copyright 1996-1997 by Dave Jarvis
+-------------------------------------------------
+
+Features to add to JOOT
+-------------------------------------------------
+Hack		-- Shows hacker board
+Whack		-- Wipes hacker board
+Set Forward	-- Forward smail to E-mail account
+Find		-- Finds text in user settings; replacement for .samesite:
+	.find site <text>
+	.find email <text>
+	.find homepage <text>
+Statistics	-- Does statistical analysis on user database
+.grant		-- By itself, shows commands granted to all users
+		-- Doesn't let you grant a command you cannot already do
+.revoke		-- By itself, shows commands revoked from all users
+.review [room]	-- Reviews a room's buffer from within a remote room
+
+.set passecho	-- Toggle password echo on login [on/off]
+

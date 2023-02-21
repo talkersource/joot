@@ -1,0 +1,15 @@
+^5Help - Set Alias
+~5USAGE: .set alias [^new alias~5]
+
+~5Use this command when you wish to change the case of your alias.
+
+~5EXAMPLE
+  ~5If your alias was "eltonjohn", you could type:
+  ~5.set alias EltonJohn
+
+  ~5That would show "EltonJohn" whenever somebody sees information from or
+  ~5about you, instead of "eltonjohn".
+
+~5SEE ALSO
+  ^5.help set
+

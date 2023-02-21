@@ -1,0 +1,8 @@
+^5Help - Set Echo
+~5USAGE: .set echo [^5on~5/^5off~5]
+
+~5Use this command when you can't see what you're typing.
+
+~5SEE ALSO
+  ^5.help set
+

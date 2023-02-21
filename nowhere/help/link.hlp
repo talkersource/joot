@@ -1,0 +1,30 @@
+^5Help - Link
+~5USAGE: .link [^5user~5] ^5talker~5 [^5password~5]
+~5WHERE: ^5talker ~5is the name of a remote talker you wish to link to
+       ^5password ~5is your password on the remote talker
+       ^5user ~5is your user name on the remote talker
+
+~5Use this command when you wish to logon to another talker without having
+~5to logout from the one you are currently on (called a "link").  Because
+~5the delay between talkers is unpredictable, this command may take up to
+~5five minutes (idealistically 10 seconds) to complete.
+
+~5EXAMPLES
+~5  .link oz
+~5  .link dorothy oz
+~5  .link dorothy oz gayle
+
+~5The first example links you to the talker "Oz" using your current name,
+~5and asks for your remote password.  The second example links you to "Oz"
+~5using a user name of "dorothy", and asks for your remote password.  The
+~5third example links you to "Oz" using a name of "dorothy" and a remote
+~5password of "gayle".
+
+~5IN ALL CASES, you must already have an account on the remote talker
+~5before you can link to it.
+
+~5To do a command on Oz, you would type: @oz .command
+
+~5SEE ALSO
+  ^5.help where~5, ^5.help unlink
+

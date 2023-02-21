@@ -1,0 +1,402 @@
+-------------------------------------------------
+JOOT: The Java-based Object-Oriented Talker
+      Copyright 1996-1997 by Dave Jarvis
+-------------------------------------------------
+
+New JOOT-related Information
+-------------------------------------------------
+v1.7    -- July 30, 1997
+  * Release #6
+
+v1.6.14 -- July 28, 1997
+  * Bug Fixes (resolving DNS/IP)
+
+v1.6.13 -- July 26, 1997
+  * .tmacro	- Adds/removes/changes talker macros
+
+  * Strings (451-461)
+  * Removed turning echo off via the telnet protocol for users logging in
+  * Bug Fixes (search, logging in)
+  * ANSI Terminal v2.4 is 50% faster than v2.0
+
+v1.6.12 -- July 11, 1997
+  * .search	- Searches smail, suggestions, message board, etc. for text
+
+  * Intelligent DNS lookup (only looks up a user's DNS if the IP address
+    has changed since last login).  Should speed up connect time.
+  * Help Files (echo, pemote, quit, rank, read, review, time, topic, view,
+                write, knock, look, nuke, private, promote, search)
+  * Bug Fixes (nuke, level)
+
+v1.6.11 -- July 10, 1997
+  * MIN_LEVEL_WHO_WIZARD config.dat option
+  * Added detection of ANSI Terminal v2.1 by JOOT
+
+  * Strings (373, 4)
+  * Help Files (who)
+  * Set-up private release preview for paying customers
+  * Bug Fixes (Bot Protocol)
+
+v1.6.10 -- July 5, 1997
+  * Private release
+
+v1.6.9  -- July 4, 1997
+  * INITIAL_USER_SETTINGS config.dat option
+
+  * Slight change in how colour works.  This helps typing in URLs which
+    contain tildes (~), and fixes other problems.
+  * New look to the "who" command
+  * Bug Fixes
+
+v1.6.8  -- June 23, 1997
+  * .hide	Makes you in/visible (toggles)
+
+  * Strings (409, 447-449)
+  * Disabled auto-detect of terminal-type due to telnet clients not having
+    a full Telnet Protocol implementation
+  * When an error occurs, an E-mail is sent to dj@joot.com
+    (What the user typed, and the error message.)
+  * JOOT conforms to Java's 1.1 specification
+  * Reduced (slowed?) memory consumption
+  * Additional Macintosh setup information in the README file
+  * Minor documentation changes (UPGRADE, README)
+
+v1.6.7  -- June 19, 1997
+  * Turned off password echo
+  * Auto-detect terminal type
+
+v1.6.6  -- June 18, 1997
+  * .say	takes into account enemies
+  * .emote	"	"	"	"
+  * logging in	"	"	"	"
+  * .quit	"	"	"	"
+  * .tell	"	"	"	"
+  * .pemote	"	"	"	"
+  * .smail	"	"	"	"
+  * .shout	"	"	"	"
+  * .semote	"	"	"	"
+  * .who	"	"	"	"
+
+  * Strings (446, 408, 118, 18)
+  * Help Files (tell)
+  * Notification (audible beep) of when friends log in
+  * Date/Time stamp showed on booting
+  * Bug Fixes
+
+v1.6.5  -- June 16, 1997
+  * .enemy	adds/removes people to/from your enemies list
+  * .friend	adds/removes people to/from your friends list
+  * .grant	works on offline users as well
+  * .revoke	"	"	"	"
+
+  * Strings (433-445)
+  * Help Files (friend, enemy, beep)
+  * Created "people" directory to hold information about friends/enemies.
+  * Bug Fixes
+
+v1.6.4  -- June 12, 1997
+  * .enemy	adds people to your ignored list (has no effect, yet)
+  * .friend	adds people to your friends list (has no effect, yet)
+
+  * Help Files (joot)
+  * Bug Fixes
+
+v1.6.3  -- June 10, 1997
+  * .mrecord	sends a user's .record session to their E-mail address
+  * .record	changed level to Wizard from God
+
+  * Strings (429-432)
+  * Help Files (mrecord, record)
+
+  * JOOT is now a registered company in Ontario, Canada
+  * Released OOT source code under the GNU General Public License
+  * JOOT is no longer free for commercial use (see PRICING file for details)
+  * Sped up the encryption mechanism (slight improvement)
+  * Scrabble, I mean JavaCross is completed; Bot portion still remains.
+  * Greatly improving ANSI Terminal Applet which provides Web connectivity
+  * Minor documentation changes (FAQ, UPGRADE, PRICING)
+
+v1.6.2  -- May 21, 1997
+  * Unofficially Passed Sun's 100% Pure Java Check test.  This means that
+    (in theory) JOOT is capable of running equally well on all operating
+    systems.  In practise, it works equally well on all platforms tested.
+    (Windows NT, Windows 95, Linux, FreeBSD, BSDI, and SunOS.)
+
+v1.6.1  -- May 20, 1997
+  * Increased sever's thread priority (connecting should be faster)
+  * Added more debug information when users get kicked off
+
+  * Help Files (joot)
+  * Bug Fixes (jail)
+
+v1.6    -- May 17, 1997
+  * Release #5
+
+v1.5.2  -- May 17, 1997
+  * JOOT is now at: http://www.joot.com
+
+  * Updated create.bat
+  * Added NOTES/BOTS which explains how the Bot protocol works
+  * Started work on Clabbers (a Scrabble clone)
+  * CreateUser program.  See the CREATE file
+
+  * Help Files (joot)
+  * Bug Fixes (nuke)
+
+v1.5.1  -- May 11, 1997
+  * MIN_ALIAS_LENGTH config.dat option
+
+  * Strings (428)
+  * Bug Fixes (wipe, rset)
+  * More Bot Protocol
+
+v1.5    -- May 3, 1997
+  * Release #4
+
+v1.4.2  -- May 3, 1997
+  * Strings (427)
+  * Help Files (password)
+  * Bug Fixes
+
+v1.4.1  -- April 30, 1997
+  * Strong Encryption: All user.dat files (/users/data/a-z) must be
+    wiped.  All user.sml files (/users/smail/a-z, sent/a-z) must be
+    wiped.  All message board files (/rooms/*.msg) must be wiped.  The
+    suggestion board (/data/suggest.dat) must be wiped.
+
+  * Bug Fixes
+
+v1.4    -- April 29, 1997
+  * Private Release
+
+v1.3.4  -- April 28, 1997
+  * .record	records everything the user sees until toggled off or logout
+
+  * Strings (422-426)
+  * Help Files (record, say)
+  * Record Directory (/nowhere/users/record/a through z)
+  * Bug Fixes (link, revoke, rset)
+
+v1.3.3  -- April 25, 1997
+  * Bug Fixes (bansite, rset, level)
+
+v1.3.2  -- April 23, 1997
+  * .logoffs	displays last several logoffs
+  * .with	displays who is with you, or with another user
+  * .echo	reviews the room's echos
+  * .rset	say and echo levels
+  * .bot	toggles the bot protocol on a given user
+
+  * Strings (413-422)
+  * Help Files (macro, shout, semote, logoffs, who, with)
+  * New Room Settings: Echo Level and Say Level (README section 4.3)
+  * MAX_LOGON_LOG aptly renamed to MAX_LOGOFFS_LOG
+  * Partial implementation of the Bot protocol (tells and says)
+
+v1.3.1  -- April 21, 1997
+  * .macro	multiple commands per macro
+
+  * Help Files (macro)
+  * Bug Fixes (erasing messages)
+
+v1.3    -- April 20, 1997
+  * Release #3
+
+v1.2.5  -- April 20, 1997
+  * .suggest	anonymous message board
+  * .swipe	erase messages from the anonymous message board
+
+  * Strings (404-412)
+  * Help Files (suggest, swipe, wipe, swho)
+  * Bug Fixes (.purge, and others)
+
+v1.2.4  -- April 18, 1997
+  * .stun	revokes all commands from a user except .quit
+  * .muzzle	revokes a user's ability to shout
+  * .unstun	undoes a stun
+  * .unmuzzle	undoes a muzzle
+
+  * Strings (381-404)
+  * Help Files (stun, muzzle, unstun, unmuzzle, jail)
+  * Bug Fixes (.free, .jail, .tell, .purge)
+
+v1.2.3  -- April 17, 1997
+  * .ptell	sends a picture to an individual user
+
+  * Strings (379, 380)
+  * Help Files (free, jail, load, ptell)
+  * Bug Fixes (.free, .jail, .macro)
+  * MOVE_USER_ON_FREE config.dat option
+
+v1.2.2  -- April 16, 1997
+  * .jail	puts user in Jail and allows them only to say things
+  * .free	puts user in Main Room, with the status they had before .jail
+  * .set talk	changes having to type "." before a command or not
+  * .system	displays system information to users; and more info. to sysops
+  * .bansite	now can do hard-bans on a site (NOBODY gets in)
+
+  * Strings (46, 363, 364, 369-378)
+  * Help Files (samesite, set, set_logons, set_logoffs, set_talkmode,
+    bansite, set_picture, system, version)
+  * Bug Fixes (.tell, .wizcast, .examine, .link)
+  * RESOLVE_DNS_FOR_IP config.dat option
+
+v1.2.1  -- April 9, 1997
+  * .tabbr	
+  * .load tabbrs	loads new Talker abbreviations
+
+  * TabbrCmd entry to commands.dat
+  * data/abbrs.dat file - all users get these, plus "30" of their own
+  * Help Files (tabbr, load)
+  * Bug Fixes (.pemote)
+
+v1.2    -- April 8, 1997
+  * Release #2
+  * Character Mode (.set back)
+  * Local Echo toggle (.set echo)
+
+  * Strings (367, 368)
+  * Help Files (broadcast, sos, shutdown, unlink, set, set_echo)
+  * Bug Fixes (.pemote, .quit, .shutdown, .string)
+  * Compatibility fix with Kaffe
+  * Runs on Java versions 1.0.2 and 1.1
+
+v1.0.1  -- April 5, 1997
+  * .picture	sends a file to everybody in the current room, or a given user
+  * .sos	allows a user to send a message to all the wizards
+  * .broadcast	by itself, will review the last several broadcasts
+
+  * Strings (241, 319, 357-366)
+  * Help Files (woohoo, picture, sos, wizcast, ewizcast, set)
+  * MAX_BROADCAST_BUFFER config.dat option
+  * Increased priority on new connections (faster connects should result)
+  * Compatibility fix with Kaffe
+  * Bug Fixes
+
+v1.0    -- April 1, 1997
+  * Release #1
+
+v0.1.28 -- March 31, 1997
+  * Bug Fixes (.where, .tell, .link)
+
+v0.1.27 -- March 30, 1997
+  * .unlink
+  * .finger	seems to work now
+
+  * Help Files (link, unlink)
+  * Copying tells from previous session if you get disconnected and re-login
+    before the Talker Server disposes of your dead session.
+  * Bug Fixes
+
+v0.1.26 -- March 26, 1997
+  * .bansite
+  * .load banned
+  * .set backspace	turns echo on/fixes backspace problems
+  * Merged .where into .link
+
+  * Help Files (bansite, load, set, set_fixcr, set_backspace)
+  * LINK_INTO_LINK_ROOM config.dat option
+  * Preventing new users on if their site has been banned
+  * Backspace (maybe)
+  * Bug Fixes
+  * Strings (324 removed & 336 replaces 324;
+    332 removed & 333-335 become 332-334;
+    335-339, 173, 232; 232 becomes 231)
+
+v0.1.25 -- March 25, 1997
+  * Link command additions
+  * Bug Fixes
+  * Strings (336)
+
+v0.1.24 -- March 24, 1997
+  * Bug Fixes (more link errors)
+  * Help Files (link)
+
+v0.1.23 -- March 20, 1997
+  * Bug Fixes (allows the same remote talker to be both IN and OUT)
+
+v0.1.22 -- March 19, 1997
+  * .link		doesn't allow for .link user password@talker
+  * .where
+
+  * Strings (331-335, 352-356)
+  * Help Files (link, where)
+  * Created NOTES directory
+
+v0.1.21 -- March 17, 1997
+  * .revoke
+  * .link		second pass, still incomplete
+  * @talker command	executes "command" on a remote link
+
+  * Strings (217, 346-351)
+  * Bug Fixes (.move (again), .levels, .wizcast)
+  * Help Files (grant, revoke)
+  * Kicking user off if less than MIN_LOGIN_LEVEL
+  * RevokeCmd entry to commands.dat
+
+v0.1.20 -- March 14, 1997
+  * .grant
+
+  * Strings (342-345)
+  * GrantCmd entry to commands.dat
+  * Optimisation on sockets (faster reading/writing)
+  * SAVE_GRANT_AND_REVOKE config.dat option
+
+v0.1.19 -- March 13, 1997
+  * .link		first pass, still incomplete
+
+  * Strings (324-330, 340, 341)
+  * LinkCmd entry to commands.dat
+
+v0.1.18 -- March 10, 1997
+  * .topic
+  * .samesite
+  * .look		shows more room information
+  * .set topic		toggles showing topic changes
+
+  * Strings (15, 16, 18, 109, 138, 139, 172, 320-323)
+  * SamesiteCmd entry to commands.dat
+  * Help Files (build, set_topics, samesite, rooms, who)
+
+v0.1.17 -- March 9, 1997
+  * .rooms
+  * .build
+
+v0.1.16 -- March 7, 1997
+  * Reversed Invite and Information in commands.dat
+  * Strings (310-318)
+  * Help Files (set_forward, set_email, build, rset)
+
+v0.1.15
+  * .gc			envoke the garbage collector
+  * .set email
+  * .set homepage
+
+  * Strings (304-309)
+
+v0.1.14
+  * Bug Fixes (.knock, .move, .go)
+
+v0.1.13
+  * .purge		erases unwanted users
+  * .up			promotes a 0 level user to a 1 level user
+  * .beep		works now
+  * .echo		different than OOT, but works
+
+  * Bug Fixes (.go, .move, .join)
+  * Help Files
+
+v0.1.12
+  * MIN_PASSWORD_LENGTH  config.dat option
+  * Bug Fixes
+
+v0.1.11
+  * .set exview		allows users to merge .ex and .view
+  * .join		moves yourself into the same room as another user
+
+  * Strings (119, 174, 175, 291-)
+  * Kicking user off after max # of login attempts
+  * Kicking user off if talker is "full"
+  * Help Files
+  * Bug Fixes
+

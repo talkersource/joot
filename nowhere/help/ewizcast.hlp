@@ -1,0 +1,15 @@
+^5Help - Ewizcast
+~5USAGE: .ewizcast ^5message
+~5WHERE: ^message ~5is something you wish to emote to other wizards
+
+~5Use this command when you want to emote a message to only the Wizards and
+~5Gods that are online.  By itself, it will review the last several
+~5wizcasts and emoted wizcasts.
+
+~5EXAMPLES
+  ~5.ewizcast
+  ~5.ewizcast smiles.
+
+~5SEE ALSO
+  ^5.help wizcast
+

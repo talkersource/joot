@@ -1,0 +1,11 @@
+^5Help - Muzzle
+~5USAGE: .muzzle ^5user
+~5WHERE: ^5user ~5is a user who you wish to revoke shouts from
+
+~5Use this command when you have a user abusing the shout command.  It will
+~5prevent the user from using shouts.  You may muzzle online and/or offline
+~5users.
+
+~5SEE ALSO
+  ^5.help unmuzzle~5, ^5.help kill~5, ^5.help jail~5, ^5.help stun
+

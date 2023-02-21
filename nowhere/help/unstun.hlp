@@ -1,0 +1,11 @@
+^5Help - Unstun
+~5USAGE: .unstun ^5user
+~5WHERE: ^5user ~5is a user who you wish to unstun
+
+~5Use this command when an obnoxious user has cooled off.  This will allow
+~5the user to do all the normal commands (except those specifically revoked).
+~5You may unstun online and/or offline users.
+
+~5SEE ALSO
+  ^5.help stun~5, ^5.help muzzle
+

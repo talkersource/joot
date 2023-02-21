@@ -1,0 +1,12 @@
+^5Help - Examine
+~5USAGE: .examine ^user
+~5WHERE: ^user ~5is a user you wish to view the status of
+
+~5Use this command when you want to see more information about a user (such as
+~5the last time she logged on).
+
+~5By not specifying a ^5user~5, this command defaults to examining yourself.
+
+~5SEE ALSO
+  ^5.help view
+

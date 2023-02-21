@@ -1,0 +1,14 @@
+^5Help - Mrecord
+~5USAGE: .mrecord [^5E-mail Address~5]
+ 
+~5Use this command when you want to send your record session to your
+~5current E-mail address.  Optionally, you may specify a different E-mail
+~5address to send the mail to.
+
+~5EXAMPLES
+  ~5.mrecord
+  ~5.mrecord David.Bowman@hal.discovery.gov
+
+~5SEE ALSO
+  ^5.record~5, ^5.h set email
+

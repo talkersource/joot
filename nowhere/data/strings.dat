@@ -1,0 +1,462 @@
+0. Enter your name: 
+1. ^2Enter your Password: 
+2. Enter a new Password: 
+3. Retype that Password: 
+4. Your name must be at least 3 letters; no numbers permitted.
+5. That password is too short.
+6. That is not your password.
+7. The passwords do not match, %n more tries.
+8. Too many attempts reached!
+9. Your site has been banned!
+10. Welcome to this place, %u!
+11. ~5Come back soon, %u!
+12. ^1You are now in %r.
+13. ^1You peer into %r and see ...
+14. ~2Current topic is: %s
+15. ~2%r is ^2unlocked~2.
+16. ~2%r is ^2locked~2.
+17. ~5From here you can go:
+18.   ~5There are ^5%n ~5messages on the board.
+19. ^5With you, you see:
+20. ~5%r is not a valid room name.
+21. ~5%s ~5is not a command on this talker, %u.
+22. ~5As a %l, %u, using ^%s ~5is but a dream!
+24. - a %l.
+25. %u has returned to the keyboard!
+26. has gone away from the keyboard!
+27. %u %s -- (AFK)
+28. ~2-=[ Arriving: %u %d ~2]=-
+29. ~5-=] Leaving : %u %d ~5[=-
+30. %u says: %s
+31. %u %s
+32. %u%s
+33. ! %u shouts: %s
+34. & %u %s
+35. & %u%s
+36. ^7 -> %u tells you: %s
+37. ^7 -> %u %s
+38. ^7 -> %u%s
+39. ^7 -=> WIZ ~7%u says: %s ^7<=-
+40. ^7 -=> WIZ ~7%u %s ^7<=-
+41. ^7 -=> WIZ ~7%u%s ^7<=-
+42. ~5You tell %u: %s
+43. ~5You pemote to %u: %w %s
+44. ~5You pemote to %u: %w%s
+45. ^5*** ^6%s ^5***
+46. ~5What would you like to send?
+47. ^7 -=> SOS ~7%u says: %s ^7<=-
+48. ~2You have ^5NEW ~2smail.
+49. ~2You have stale smail.
+50. ~2%u set the topic to: %s
+51. ~5The current topic is: %s
+52. ~5You changed your description to: %d
+53. ~5Your current description is: %d
+54. ~5You changed your name to: %u
+55. ~5Your current name is: %u
+56. ~5You changed your password to: ^5%s
+57. ~5%u cannot be disturbed by you.
+58. ^5<=- Begin User Settings -=>
+59. ^5<=-  End User Settings  -=>
+60. ^5<=- Begin Levels -=>
+61. ^5<=-  End Levels  -=>
+62. ^5<=- Begin Sent Smail -=>
+63. ^5<=-  End Sent Smail  -=>
+64. ^5<=- Begin Room Settings -=>
+65. ^5<=-  End Room Settings  -=>
+66. ^5<=- Begin User Ranks -=>
+67. ^5<=-  End User Ranks  -=>
+68. ^5<=- Begin Available Commands -=>
+69. ^5<=-  End Available Commands  -=>
+70. ^5<=- Begin Smail -=>
+71. ^5<=-  End Smail  -=>
+72. ^5<=- Begin %r's Message Board -=>
+73. ^5<=-  End %r's Message Board  -=>
+74. ^5<=- Begin Site -=>
+75. ^5<=-  End Site  -=>
+76. ^5<=- Begin Finger -=>
+77. ^5<=-  End Finger  -=>
+78. ^5<=- Begin Suggestion Board -=>
+79. ^5<=-  End Suggestion Board  -=>
+80. ^5<=- Begin %r's Review -=>
+81. ^5<=-  End %r's Review  -=>
+82. ^5<=- Begin Shouts -=>
+83. ^5<=-  End Shouts  -=>
+84. ^5<=- Begin Wizcasts -=>
+85. ^5<=-  End Wizcasts  -=>
+86. ^5<=- Begin Tells -=>
+87. ^5<=-  End Tells  -=>
+88. ^5<=- Begin Macros -=>
+89. ^5<=-  End Macros  -=>
+90. ^5<=- Begin Abbreviations -=>
+91. ^5<=-  End Abbreviations  -=>
+92. ^5<=- Begin Banned Sites -=>
+93. ^5<=-  End Banned Sites  -=>
+94. ^5<=- Begin Invited Users -=>
+95. ^5<=-  End Invited Users  -=>
+96. ^5<=- Begin Strings -=>
+97. ^5<=-  End Strings  -=>
+98. ^5<=- Begin Online Users -=>
+99. ^5<=-  End Online Users  -=>
+100. ~5Loading of ^5%s ~5failed.
+101. ~2Loading of ^2%s ~2was successful.
+102. ~5What would you like to load?
+103. ~5That is not a valid load parameter.
+104. ~5There is no help on the topic of "%s".
+105. ~5Oops!  No map just yet!
+106. ~2String ^2%n ~2changed to: "%s~2"
+107. -Secret Room-
+108. Somebody
+109. ~2Press ^2Enter ~2to continue; a command, or ^2q ~2then ^2Enter ~2to stop.
+110. ~5Okay.
+111. ~5%u is not currently online, %w.
+112. ~5%s matches multiple user names, %u.
+113. ~5%u does not exist, %w.
+114. ~5%r does not exist, %u.
+115. ~5%l is not a valid level name.
+116.   ~5Absolutely nobody.
+117. ~5%u ~5is not a valid user name, %w.
+118. ^3(~3Connection closed by foreign host^3)
+119. ^7We're at 100 users.  (Paaaarty!)  Please try again later.
+120. ~2Your tells are on.
+121. ~5Your tells are off.
+122. ~2Your shouts are on.
+123. ~5Your shouts are off.
+124. ~2Your pictures are on.
+125. ~5Your pictures are off.
+126. ~2Your colours are on.
+127. ~5Your colours are off.
+128. ~2Your bold is on.
+129. ~5Your bold is off.
+130. ~2Your room descriptions are on.
+131. ~5Your room descriptions are off.
+132. ~2Your says are on.
+133. ~5Your says are off.
+134. ~2Listening to what your enemies have to say.
+135. ~5Ignoring what your enemies have to say.
+136. ~2Your logons are on.
+137. ~5Your logons are off.
+138. ~2Viewing topic changes.
+139. ~5Ignoring topic changes.
+140. ~2Your wizcasts are on.
+141. ~5Your wizcasts are off.
+142. ~2Your feedback are on.
+143. ~5Your feedback are off.
+144. ~2Your friends are turned on.
+145. ~5Your friends are turned off.
+146. ~2Your carriage returns are on.
+147. ~5Your carriage returns are off.
+148. ~2Your word wrap is on.
+149. ~5Your word wrap is off.
+150. ~2Your invites are on.
+151. ~5Your invites are off.
+152. ~2Forwarding to E-mail is on.
+153. ~5Forwarding to E-mail is off.
+154. ~2Your beeps are on.
+155. ~5Your beeps are off.
+156. ~2Your sos messages are on.
+157. ~5Your sos messages are off.
+158. ~2Your logoffs are on.
+159. ~5Your logoffs are off.
+160. ~2Your abbreviation has been added.
+161. ~2Your abbreviation has been changed.
+162. ~5Your abbreviation has been deleted.
+163. ~5Could not find that abbreviation.
+164. ~5That is not a valid abbreviation character.
+165. ~5You have run out of space for abbreviations.
+166. ~2Your macro has been added.
+167. ~2Your macro has been changed.
+168. ~5Your macro has been deleted.
+169. ~5Could not find the macro %s~2.
+170. ~2An additional action has been added for %s~2.
+171. ~5You have run out of space for macros.
+172. ~5You cannot change %r's topic.
+173. ~5Explicit backspace checking off.
+174. ~2Examine and View are now joined.
+175. ~5Examine and View are now split.
+176. ~2Auto-read new smail is on.
+177. ~5Auto-read new smail is off.
+178. ~2Now showing your cumulative time.
+179. ~5Your cumulative time is now hidden.
+180. ~5Who do you wish to promote?
+181. ^2%w promoted %u to %l!
+182. ~5You cannot promote %u.
+183. ~2%u has locked %r.
+184. ~2%u has unlocked %r.
+185. ~5Sorry, %u, but you need a key to un/lock %r.
+186. ~5There seems to be somebody lurking about ...
+187. ~5Oops!  %r is not adjoined to this room.
+188. ~5%r is locked right now.
+189. %u goes to %r.
+190. %u walks in from %r.
+191. %u disappears in a puff of logic!
+192. %u appears like a whiff of chocolate.
+193. ~5Looks like %r is forbidden, %u.
+194. ~5Seems you are already in %r.
+195. ~2You change %r's ^2access level ~2to ^2%l.
+196. ~2You change %r's ^2say buffer length ~2to ^2%n.
+197. ~2You change %r's ^2clear buffer level ~2to ^2%l.
+198. ~2You change %r's ^2lock level ~2to ^2%l.
+199. ~2You change %r's ^2read level ~2to ^2%l.
+200. ~2You change %r's ^2review level ~2to ^2%l.
+201. ~2You change %r's ^2topic level ~2to ^2%l.
+202. ~2You change %r's ^2view level ~2to ^2%l.
+203. ~2You change %r's ^2warp level ~2to ^2%l.
+204. ~2You change %r's ^2wipe level ~2to ^2%l.
+205. ~2You change %r's ^2write level ~2to ^2%l.
+206. ~5%s is not a valid room setting to change.
+207. ~5You cannot move %u to you, %w.
+208. %w has snagged %u to %r!
+209. %w has dragged %u in from %r!
+210. %u has been whisked away!
+211. %u just dropped in!
+212. ~5Need somebody to move, %u.
+213. ~5%u is already in the room.  Move somebody else!
+214. ~5%u could not be found for nuking.
+215. ^2%w turns %u into a Gremlin, then lets in the ^6sun^7light^2.
+216. ~5Need a user name to nuke.
+217. ~5You are not a high enough level to login, sorry.
+218. ~5%u could not be invited, %w.
+219. ~2%w has invited %u to %r.
+220. ~5%u is already in %r, %w!
+221. ~2%w has invited you to ^2%r~2.
+222. ~5You are unable to knock on %r.
+223. ~2You knock on %r.
+224. ~5Knocking on your skull would be just as useful.
+225. ~2%u wants to join the fun.
+226. ~5Begging your pardon ... which room was that, again?
+227. ~5Knocking on an empty room.  Neat.
+228. ~5You've already been invited!
+229. ~5The door is wide open.
+230. ~5%u has received your smail.
+231. ~5Hrm ... What would you like to smail %u?
+232. ~2Explicit backspace checking on.  Hope it helps!
+233. ~2%u posted a message on the board.
+234. ~5%r's board is too high for you to reach.
+235. ~5What would you like to write?
+236. ~5%r's board seems to be written in Gaelic.
+237. ~5Reviewing what was said in %r doesn't seem possible right now.
+238. ~5Clearing what was said in %r doesn't seem possible right now.
+239. ~2The room's conversation buffer has been cleared.
+240. ~5What do you wish to pemote to %u, %w?
+241. ~5What do you wish to tell %u, %w?
+242. ~5%u is currently ignoring tells.
+243. ~5Your rows are set to: %n
+244. ~2You change your rows to: %n
+245. ~5Your columns are set to: %n
+246. ~2You change your columns to: %n
+247. ~5%s ~5is not a valid set option, %u.
+248. ~5%r is locked at the moment, %u.
+249. ~2You deleted your sent smail.
+250. ~5Which smail messages do you wish to clear?
+251. ~2You deleted all your smail.
+252. ~2You deleted ^2%n ~2message(s).
+253. ~2Your new password is: ^2%s
+254. ~5That is not a valid password.
+255. ~5Need both your old password and new password.
+256. ~5Who do you wish to demote, %u?
+257. ~5%w has demoted ^5%u ~5to the lowly level of ^5%l~5.
+258. ~5You may not demote %u, %w.
+259. ~5Which messages did you want to wipe?
+260. ~2%u wiped ^2%n ~2message(s) from the board.
+261. ~5No messages were wiped.
+262. ~5You must keep at least 3 levels.
+263. ~5Rename which level to what?
+264. ~5Who would you like to kill?
+265. ^5With a ^6bang ^5and a ^2pop^5, %w wipes the smile off %u's face.
+266. ~5You cannot kill the %l %u, %w.
+267.     ~1-----^1-----^5=====^7( ^2B~2egin ^2E~2xamine ^7)^5=====^1-----~1-----
+268.     ~1-----^1-----^5=====^7(  ^4E~4nd ^4E~4xamine  ^7)^5=====^1-----~1-----
+269. Currently logged on.
+270. ~5Type ^5.view %u ~5to view this user's profile.
+271. ~2Now monitoring other users.
+272. ~5No longer monitoring other users.
+273. ^5<=- Begin Talker Configuration -=>
+274. ^5<=-  End Talker Configuration  -=>
+275. ~5Option ^5%s ~5is currently ^5%n~5.
+276. ~2Option ^2%s ~2has been changed to ^2%n~2.
+277. ~5Whose password do you wish to change?
+278. ~5What is going to be %u's new password, %w?
+279. ^2%u's ~2new password is: ^2%s
+280. ^5%s ~5is not a valid password for %u, %w.
+281.     ~1-----^1-----^5=====^7( ^2E~2nter ^2I~2nformation ^7)^5=====^1-----~1-----
+282.     ~1-----^1-----^5=====^7( ^4E~4nter ^4R~4oom ^4D~4escription ^7)^5=====^1-----~1-----
+283. ~2Continuing ^2...
+284. ~5And now ... (^2S~5)ave, (^6Q~5)uit, (^4D~5)isplay, or (^5C~5)ontinue?
+285. ~5Information not saved!
+286. ~2Your information has been saved.
+287. ~2Room description saved.
+288. ~5Line %n:
+289.     ~1-----^1-----^5=====^7( ^2B~2egin ~5%u's ^2V~2iew ^7)^5=====^1-----~1-----
+290.     ~1-----^1-----^5=====^7(  ^4E~4nd ~5%u's ^4V~4iew  ^7)^5=====^1-----~1-----
+291. %w has joined %u in %r!
+292. %w joins %u, jumping from %r!
+293. %w has found a friend to join!
+294. %w joins you, appearing in a little white puff a smoke.
+295. ~5Need somebody to join, %u.
+296. ~5You are already in the room, %w!  (Join somebody else, perhaps?)
+297. ~5Ask that the door be opened before you join ...
+298. ~5An invisible force holds you back from joining %u right now.
+299. ^5<=- Begin Users That Would Be Purged -=>
+300. ^5<=-  End Users That Would Be Purged  -=>
+301. ~2No users purged.
+302. ~2There were ^2%n ~2users purged.
+303. ~5Must supply both a level and a number of days.
+304. ~5Your E-mail address is: %s
+305. ~2You change your E-mail address to: %s
+306. ~5Your Homepage is: %s
+307. ~2You change your Homepage to: %s
+308. ~5Your Gender is: %s
+309. ~2You change your Gender to: %s
+310. ~5Need more parameters before you can do that.
+311. ~5What would you like to build?
+312. ~2A room named ^2%r ~2has been created.
+313. ~5%r already exists!
+314. ~2Current room renamed to ^2%r~2.
+315. ~5Invalid join indication character (prepend a ^5+ ~5or ^5-~5).
+316. ~2The room ^2%r ~2is now adjoined to this room.
+317. ~2The room ^2%r ~2is no longer adjoined to this room.
+318. ^3WARNING: ^6Your room no longer exists!  ~2You are now in ^2%r~2!
+319. ~5You cannot delete the temporary room.
+320. ~5You need to specify part of a site.
+321. ^5<=- Begin Matching Sites -=>
+322. ^5<=-  End Matching Sites  -=>
+323. %u from: ~2%s
+324. ~5You cannot link from a link.
+325. ~5That talker name is not registered.
+326. ~5Inform the SysOp that linked talker is down.
+327. ~5Link terminated.  Oof!
+328. ~5Access denied!  Link Terminated.
+329. ~2Please wait ... Linking to %s ...
+330. ~2-=- Linked In: %u %d ~2-=-
+331. ~5You are not linked at the moment.
+332. ~5Link to %s has been closed.
+333. ~5-=- Linking Out: %u %d ~5-=-
+334. ~5You are already connected to %s.
+335. ~5You cannot ban localhost!
+336. ~2That site is already banned.
+337. ~2The site ^2%s ~2has been banned!
+338. ~5The site ^5%s ~5could not be banned.
+339. ~2The site ^2%s ~2has been unbanned.
+340. ~2Now reading topic changes.
+341. ~2Now ignoring topic changes.
+342. ~5Grant what command to whom?
+343. ~5The command ^5%s ~5was not found to be granted.
+344. ~2%u now has the ^2%s ~2command.
+345. ~2%w gave you the ^2%s ~2command, %u!
+346. ~5Revoke what command from whom?
+347. ~5The command ^5%s ~5was not found to be revoked.
+348. ~2%u no longer has the ^2%s ~2command.
+349. ~2%w revoked the ^2%s ~2command, %u!
+350. ^5<=- Begin Granted and Revoked Commands -=>
+351. ^5<=-  End Granted and Revoked Commands  -=>
+352. ^5<=- Begin Link Information -=>
+353. ^5<=-  End Link Information  -=>
+354. ~2You are currently at %s.
+355. ~2You are currently linked to:
+356. ~2You can link to:
+357. ~5%w shows you a picture ...
+358. ^5<=- Begin Available Pictures -=>
+359. ^5<=-  End Available Pictures  -=>
+360. ~2The picture ^2%s ~2was sent to %u.
+361. ~5The picture ^5%s ~5could not be found.
+362. ~5%u is ignoring pictures right now.
+363. ~2Command mode is now on -- use ^2say ~2to talk!
+364. ~2Talk mode is now on -- just type to talk!
+365. ^5<=- Begin Broadcasts -=>
+366. ^5<=-  End Broadcasts  -=>
+367. ~2Echo is now on.
+368. ~5Echo is now off.
+369. ~5Corrupt user file: %s~5!
+370. ^3-=< ^1Coming Back: ~2%u %d ^3>=-
+371. ^3-=< ^5Going Away : ~5%u %d ^3>=-
+372. ~5Who do you wish to send to jail?
+373. ^5%w ~5slams the bars on ^5%u~5!
+374. ~5You cannot jail the %l %u, %w!
+375. ~5%u has already been tossed into jail, %w.
+376. ~5Who do you wish to send to free from jail?
+377. ^2%w ~2gives ^2%u ~2another chance ...
+378. ~5You cannot free the %l %u, %w!
+379. ~5%u has already been freed from jail, %w.
+380. ~5Which picture did you want to send to %u, %w?
+381. ~5You cannot shout at the moment.
+382. ~5Who do you wish to stun?
+383. ~2%u has been stunned, %w!  Enjoy the silence!
+384. ~5You have been stunned, %u.
+385. ~5You cannot stun the %l %u, %w!
+386. ~5%w tried to stun you, %u!  The nerve!
+387. ~5%u has already been stunned, %w.
+388. ~5Who do you wish to unstun?
+389. ~2%u has been unstunned.
+390. ~5You have been unstunned, %u.
+391. ~5You cannot unstun the %l %u, %w!
+392. ~5%u is not stunned, yet, %w.
+393. ~5%u is either stunned or jailed, and cannot respond, %w.
+394. ~5Who do you wish to muzzle?
+395. ~2%u has been muzzled, %w!
+396. ~5You have been muzzled, %u.
+397. ~5You cannot muzzle the %l %u, %w!
+398. ~5%w tried to muzzle you, %u!  The nerve!
+399. ~5%u has already been muzzled, %w.
+400. ~5Who do you wish to unmuzzle?
+401. ~2%u has been unmuzzled.
+402. ~5You have been unmuzzled, %u.
+403. ~5You cannot unmuzzle the %l %u, %w!
+404. ~5%u is not muzzled, yet, %w.
+405. ~5What would you like to suggest, %u?
+406. ~5Could not write to the suggestion board!
+407. ~2Anonymous message posted.
+408. Please wait ... Connecting ...
+409. ~5There are ^5%n ~5user(s), and ^5%s ~5hidden user(s).
+410. ~5Which anonymous messages did you want to swipe?
+411. ~2%u swiped ^2%n ~2message(s) from the anonymous message board.
+412. ~5No messages were swiped.
+413. ^5<=- Begin Logoffs -=>
+414. ^5<=-  End Logoffs  -=>
+415. ~5You may not echo in this room.
+416. ^5<=- Begin Echos -=>
+417. ^5<=-  End Echos  -=>
+418. ~2You change %r's ^2echo level ~2to ^2%l.
+419. ~2You change %r's ^2say level ~2to ^2%l.
+420. ~5You may not talk in this room.
+421. ~5You may not emote in this room.
+422. ~5Who do you wish to make a Bot?
+423. +-------------------] User Started Recording [-------------------+
+424. |-------------------> User Stopped Recording <-------------------|
+425. ^2Everything you see is now being recorded.
+426. ~5Recording has stopped.
+427. recording
+428. ~5%r's board is too high for your eraser.
+429. ~5You need a valid E-mail address before you can mail your record file.
+430. ~5Error sending the record file!
+431. ~2Record file sent to: %s
+432. ~5No record file found, sorry.
+433. ~2Your record file has been deleted.
+434. ^5<=- Begin Friend List -=>
+435. ^5<=-  End Friend List  -=>
+436. ~5You've not set %u as one of your friends, %w.
+437. ~2You've removed %u as one of your friends.
+438. ~5%u is already one of your friends, %w.
+439. ~2%u now your friend, %w.  Awww ... How sweet!
+440. ^5<=- Begin Enemies List -=>
+441. ^5<=-  End Enemies List  -=>
+442. ~5You've not set %u as one of your enemies, %w.
+443. ~2You've removed %u as one of your enemies.
+444. ~5%u is already one of your enemies, %w.
+445. ~2%u now one of your enemies, %w.  Enjoy the silence!
+446. ~5You cannot send smail to %u at this time, %w.
+447. ~5You may not hide %u, %w.
+448. disappears into the shadows.
+449. emerges from the shadows.
+450. ~5You may not invite %u, %w.
+451. ^5<=- Begin Search Results -=>
+452. ^5<=-  End Search Results  -=>
+453. ~5What would you like to search for?
+454. ~2Your talker macro has been added.
+455. ~2Your talker macro has been changed.
+456. ~5Your talker macro has been deleted.
+457. ~5Could not find the talker macro %s~2.
+458. ~2An additional action has been added for talker macro %s~2.
+459. ~5You have run out of space for talker macros.
+460. ^5<=- Begin Talker Macros -=>
+461. ^5<=-  End Talker Macros  -=>
+

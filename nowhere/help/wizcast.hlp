@@ -1,0 +1,14 @@
+^5Help - Wizcast
+~5USAGE: .wizcast ^5message
+~5WHERE: ^5message ~5is something you wish to say to other wizards
+
+~5Use this command when you want to send a message to only the Wizards and
+~5Gods that are online.  By itself, it will review the last several wizcasts.
+
+~5EXAMPLES
+  ~5.wizcast
+  ~5.wizcast Hello fellow high ranking officials!
+
+~5SEE ALSO
+  ^5.help ewizcast~5, ^5.help sos
+

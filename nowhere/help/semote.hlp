@@ -1,0 +1,14 @@
+^5Help - Semote
+~5USAGE: .semote ^5message
+~5WHERE: ^5message ~5is what you wish to semote to everybody
+
+~5Use this command when you want to send an action to all the other users on
+~5the Talker.
+
+~5EXAMPLES
+  ~5.semote smiles.
+  ~5.semote
+
+~5SEE ALSO
+  ^5.help pemote~5, ^5.help shout~5, ^5.help emote~5, ^5.help abbr
+

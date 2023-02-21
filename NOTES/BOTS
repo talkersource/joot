@@ -1,0 +1,143 @@
+-------------------------------------------------
+JOOT: The Java-based Object-Oriented Talker
+      Copyright 1996-1997 by Dave Jarvis
+-------------------------------------------------
+
+Bot Protocol Definition
+-------------------------------------------------
+1.0  Purpose
+
+	The purpose of the Bot Protocol is to define a standard way in which
+bots (automatic users, robotic users, software programs, etc.) may interact
+with a talker code.  The reason it was devised was to eliminate the overhead
+of having to "know" how the talker's own strings are formatted.
+
+
+2.0  Advantages
+
+	In addition to the bot code no longer having to know how to parse
+out a particular talker's strings, the Bot Protocol offers these significant
+advantages:
+
+   1) Language Independence.  A bot can be written in any language
+      that is able to read/write sockets.  (C, C++, Perl, Java, Smalltalk,
+      and numerous others.)  Thereby allowing you to use the best tool
+      for the job.
+
+   2) Talker Stability.  Since a bot is treated as a regular user (for
+      the most part), if a bot crashes the corresponding "user" merely
+      logs out (idles out/socket closes, etc.).  It does not hurt the Talker.
+      (Unless of course the Talker has a glitch when a user logs out.  ;-)
+
+   3) No Rebooting.  If a bot were tightly coupled with the code, you
+      might need to reboot to instigate the new bot code.  Just log the bot
+      out, recompile, and log it in again.
+
+   4) Lots of Bots.  Since the protcol is now public, people can focus
+      on bot development with the knowledge their code will run on more
+      than just one particular OOT/JOOT talker.
+
+   5) Computer Independence.  Bots that logon your talker could be on a
+      different computer half-way across the world.  If a bot is CPU
+      intensive, it doesn't affect the machine the talker is running on.
+
+   6) Other Talker Codes.  Not likely, granted, but it would be a boon if
+      NUTS/IForms/JeamLand/etc. were to follow this protocol.
+
+
+3.0  Bot-side Protocol Format
+
+	All commands seen by a bot take the following format:
+
+	!user !command !message
+
+	"user" represents the unique name of a user online.  The name should
+be treated by the Bot case-insensitively.  That is, "Darren" is equivalent to
+"daRRen".  The user name portion is optional, yet should be used whenever a
+non-bot user (in the same circumstance) would be shown the user name.
+
+	"command" represents the standard name of the command.  The commands
+are as follows:
+
+	say	- a user said something in a bot's current room
+	tell	- a user sent a private message to a bot
+	shout	- a user shouted a message to all rooms
+	wizcast	- a user sent a message to all the "Wizards" online
+	emote	- a user emoted something in a bot's current room
+	pemote	- a user sent an emoted private message to a bot
+	semote	- a user shouted an emoted message to all rooms
+	wizcast	- a user sent an emoted message to all the "Wizards" online
+	logon	- a user logged into the talker server
+	logoff	- a user logged out of the talker server
+	echo	- a user echoed something in a bot's current room
+	broadcast-a user broadcasted a message to all users online
+	topic	- a user changed the topic in a bot's current room
+	smail	- a user sent a bot a message which remains across sessions
+
+	feedback- a bot executed a command and the talker indicates it worked
+	undefined - something happened which isn't defined by this protocol
+
+	"message" is the text associated with the command that was issued.
+
+	Each line is terminated by a single new line character.  Blank lines
+should be ignored.  The grammar for the command looks like:
+
+format ::= <!> <ASCII text> <SP> <!> <ASCII text> <SP> <!> <ASCII text> <LF>
+
+	<!> is a single exclamation point.
+	<SP> is a single space.
+	<LF> can be either <LF> or <CRLF>
+
+	No ANSI/VT100/Telnet characters should be sent.
+
+
+4.0  User-side Protocol Format
+
+	When a Bot sends a private message to a user (tell, pemote, etc.) it
+should appear to the user without any formatting.  This means that the Bot
+is free to use a guaranteed 75 columns without worrying about word wrap.
+
+
+5.0  Example
+
+	If a bot was in a room with two users (Samantha and Darren), a
+sequence of events might look like:
+
+!Samantha !logon !loves Darren
+!Darren !say !Hi, Samantha!  Let's play a game with the Bot!
+!Samantha !tell !new game
+!Samantha !emote !nods.
+
+* The first line shows a user logging in.  This is specified by the "logon"
+  command.  The "loves Darren" portion would be Samantha's description.
+* The second line shows Darren saying something to everybody in the current
+  room.  "Hi, Samantha!  Let's play a game with the Bot!" is what Darren said.
+* The third line indicates the bot was sent a private message (tell) from
+  Samantha.  The bot is free to interpret "new game" however it chooses.
+* The fourth line indicates that Samantha emoted a nod.
+
+	To a normal user, these four lines might look something like:
+
+  [Logging in is ... Samantha loves Darren]
+Darren says: Hi, Samantha!  Let's play a game with the Bot!
+ -> Samantha tells you: new game
+Samantha nods
+
+	If a bot sent "Game needs 1 more player." to Samantha, it would appear
+as:
+
+Game needs 1 more player.
+
+instead of:
+
+ -> Bot tells you: Game needs 1 more player.
+
+	This means that it is up to a bot to indicate the message is coming
+from the bot.  Obviously this could lead to some wildly malicious scenarios.
+The provision in JOOT & OOT to guard against this is that the SysOp herself
+must use the "bot" command in order to change a "user" into a "bot".
+
+
+Copyright 1997 by Dave Jarvis.
+Original Protocol Design by Dave Jarvis and Ken Savage.
+

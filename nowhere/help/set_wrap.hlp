@@ -1,0 +1,12 @@
+^5Help - Set Wrap
+~5USAGE: .set wrap [^5on~5/^5off~5]
+
+~5Use this command when you wish to toggle between getting words wrapped around
+~5your screen, or not.  Typically, if nothing is wrong with what you see when
+~5chatting, you needn't change this option.  If it looks as though what other
+~5people are saying is getting cut-off in mid-sentence, then toggle this
+~5option on.
+
+~5SEE ALSO
+  ^5.help set
+

@@ -1,0 +1,9 @@
+^5Help - Topic
+~5USAGE: .topic ^5new topic
+~5WHERE: ^5new topic ~5is the text you wish to be the new topic
+ 
+~5Use this command when you want to change the current topic in the room.
+ 
+~5SEE ALSO
+  ^5.help rooms
+

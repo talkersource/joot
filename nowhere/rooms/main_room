@@ -1,0 +1,16 @@
+Access = Newbie
+Buffer = 20
+Clear = Wizard
+Lock = God
+Read = Newbie
+Review = Newbie
+Topic = User
+View = Newbie
+Warp = Newbie
+Wipe = Wizard
+Write = Newbie
+<desc>
+~5After coming through the ether known as Logon Limbo, you find yourself
+~5somewhat lightheaded, but amidst a friendly crowd.  Relax in the knowledge
+~5that you aren't Somewhere, aren't Nowhere, but are here.
+</desc>

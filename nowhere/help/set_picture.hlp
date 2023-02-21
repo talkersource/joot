@@ -1,0 +1,9 @@
+^5Help - Set Picture
+~5USAGE: .set picture [^5on~5/^5off~5]
+
+~5Use this command when you wish to toggle between seeing pictures (including
+~5the .woohoo command) or not.
+
+~5SEE ALSO
+  ^5.help set
+

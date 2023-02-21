@@ -1,0 +1,11 @@
+^5Help - Suggest
+~5USAGE: .suggest [^5message~5]
+~5WHERE: ^5message ~5is the public message to write
+
+~5Use this command when you want to write an anonymous message that everybody
+~5can read.  Without providing a ^5message~5, it reads what other people have
+~5wrote.
+
+~5SEE ALSO
+  ^5.help read~5, ^5.help wipe
+

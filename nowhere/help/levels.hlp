@@ -1,0 +1,32 @@
+^5Help - Levels
+~5USAGE: .levels [^5add level~5] [^5del level~5] [^5Old Level = New Level~5]
+
+~5By itself, this command displays all the talker levels.  You should use
+~5this command when you want to add, remove, or rename the commands that the
+~5talker uses.  It changes all user files, room files, and command levels
+~5accordingly.
+
+~5NOTE: You must type ^5add ~5or ^5del ~5in full.  No level may be named
+~5      "add" or "del".
+
+~5EXAMPLES
+  ~5.level add Immortal
+  ~5.level del User
+  ~5.level God = A Captain
+
+~5The first example adds a new level (called Immortal) to the talker.  Every
+~5user that was at the previously highest level (typically God), gets bumped
+~5up to the level of Immortal.  Each room setting, and command levels, do
+~5likewise.
+
+~5The second example removes the level (called User) from the talker.  Every
+~5user that was at the level of User gets knocked down to the next level
+~5(typically Newbie).  Each room setting, and command levels, do likewise.
+
+~5The third example renames the level (called God) to "A Captain".  Each user
+~5that was at the level of God gets the new level name of "A Captain".  Every
+~5room setting, and command levels, do likewise.
+
+~5SEE ALSO
+  ^5.help rset
+

@@ -1,0 +1,15 @@
+^5Help - Tell
+~5USAGE: .tell [^5user message~5]
+~5WHERE: ^5user ~5is a user who is currently online
+       ^5message ~5is what you wish to tell
+
+~5Use this command when you want to tell ^5user ~5a ^5message ~5that nobody
+~5else will see.  By itself, it will review your last several tells.
+
+~5EXAMPLES
+  ~5.tell
+  ~5.tell bob How is the wife?
+
+~5SEE ALSO
+  ^5.help pemote~5, ^5.help say~5, ^5.help shout~5, ^5.help abbr
+

@@ -1,0 +1,10 @@
+^5Help - Up
+~5USAGE: .up ^5user
+~5WHERE: ^5user ~5is somebody you wish to promote
+ 
+~5Use this command when you wish to raise the rank (and hence availability of
+~5commands) of a user that is currently online.
+ 
+~5SEE ALSO
+  ^5.help demote~5, ^5.help rank
+

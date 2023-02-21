@@ -1,0 +1,19 @@
+Fair's joot/data/talkers.dat
+NAME=Fair DIR=fair PORT=5000 LINK=8888
+NAME=Nowhere DIR=nowhere PORT=6660 LINK=6661
+
+[Indicates incoming and outgoing links]
+Fair's joot/data/link.dat
+TALKER=Fair              ... three incoming links (Pern, Castle, Nowhere)
+IN=Pern    PASS=PernFa  (password for Pern to access the Fair)
+IN=Castle  PASS=CastFa  (password for Castle to access the Fair)
+IN=Nowhere PASS=NowhFa  (password for Nowhere to access the Fair)
+OUT=Pern   PASS=FairPe DNS=sidhe.wonderd.com   LINK=5001
+OUT=Castle PASS=FairCa DNS=castle.megalinx.net LINK=1137
+
+TALKER=Nowhere           ... two incoming links (Pern, Fair)
+IN=Pern    PASS=PernNo  (password for Pern to access Nowhere)
+IN=Fair    PASS=FairNo  (password for Fair to access Nowhere)
+OUT=Pern   PASS=NowhPe DNS=sidhe.wonderd.com   LINK=5001
+OUT=Fair   PASS=NowhFa DNS=magmacom.com        LINK=8888
+

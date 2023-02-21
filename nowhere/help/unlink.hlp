@@ -1,0 +1,14 @@
+^5Help - Unlink
+~5USAGE: .unlink [^5talker~5]
+~5WHERE: ^5talker ~5is the name of a remote talker you wish to unlink from
+
+~5Use this command when you wish to forceably unlink from a remote talker.
+~5If you are connected to only 1 talker, you do not need to specify which
+~5talker you wish to disconnect from.
+
+~5NOTE: You should try using the .quit command on the linked talker before
+~5using this command.
+
+~5SEE ALSO
+  ^5.help link
+

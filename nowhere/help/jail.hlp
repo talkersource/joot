@@ -1,0 +1,16 @@
+^5Help - Jail
+~5USAGE: .jail ^user
+~5WHERE: ^user ~5is somebody you wish to send to the Jail room.
+ 
+~5Using this command does the following:
+
+~51) Moves the ^5user ~5into the Jail room
+~52) Denies the ^5user ~5from using any command save "Say"
+~53) Makes the ^5user ~5log into the Jail room until Free'd
+~54) Only notifies online Wizzes (or higher) when the ^5user ~5logs on or off
+
+~5Gods may not be jailed.  Even by other Gods.
+ 
+~5SEE ALSO
+  ^5.help stun~5, ^5.help kill~5, ^5.help free
+

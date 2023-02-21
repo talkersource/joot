@@ -1,0 +1,11 @@
+^5Help - Echo
+~5USAGE: .echo [^5message~5]
+~5WHERE: ^5message ~5is something you wish to say anonymously
+ 
+~5Use this command when you want to say something to the room which does not
+~5have your alias prepended to it.  Without adding a message to echo, it will
+~5review the previous echos in the room.
+ 
+~5SEE ALSO
+  ^5.help say~5, ^5.help emote~5, ^5.help tell
+

@@ -1,0 +1,16 @@
+^Help - Wipe
+~5USAGE: .wipe [^5#-##,###~5]
+~5WHERE: ^5#-##,### ~5represents the message board numbers to wipe
+
+~5Use this command when you want to wipe some messages off of the current
+~5room's message board.
+
+~5EXAMPLES
+  ~5.wipe 1-4, 26          Wipe messages 1 through 4 and message 26
+  ~5.wipe 5, 6, 9          Wipe messages 5, 6, and 9
+  ~5.wipe 24-              Wipe all messages after message 24
+  ~5.wipe -13              Wipe all messages up to message 13
+
+~5SEE ALSO
+  ^5.help read~5, ^5.help write
+

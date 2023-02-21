@@ -1,0 +1,17 @@
+^5Help - Rset
+~5USAGE: .rset [^5option value~5]
+~5WHERE: ^5option ~5is the option you wish to change
+       ^5value ~5is the new value for said option
+
+~5Use this command when you want to change any of the room's options.
+
+~5EXAMPLES
+  ~5.rset
+  ~5.rset view god
+
+~5The first example lists all changable options (and their current values).
+~5The second example changes the level required to view the room to God.
+
+~5SEE ALSO
+  ^5.help build
+

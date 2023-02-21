@@ -1,0 +1,18 @@
+^5Help - Samesite
+~5USAGE: .samesite ^site
+~5WHERE: ^site ~5is part of the site you wish to look for
+ 
+~5Use this command when you want to search all users for a site.  The search
+~5will show partial matches.
+
+~5EXAMPLES
+  ~5.samesite local
+  ~5.samesite netscape.com
+
+~5The first example would show all users who come in from "localhost" as well
+~5as any site which has "local" as part of its name.  The second example would
+~5display all users who come from any machine at netscape.com.
+ 
+~5SEE ALSO
+  ^5.help site
+

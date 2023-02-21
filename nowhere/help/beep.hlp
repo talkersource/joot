@@ -1,0 +1,14 @@
+^5Help - Beep
+~5USAGE: .beep ^5message
+~5WHERE: ^user ~5is a user who is online
+       ^5message ~5is what you wish to say
+
+~5Use this command when you want to send a message followed by an audible
+~5beep to ^5user ~5a ^5message ~5that nobody else will see.
+
+~5EXAMPLES
+  ~5.beep bob How's the wife?
+
+~5SEE ALSO
+  ^5.help tell
+

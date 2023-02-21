@@ -1,0 +1,20 @@
+^5Help - Tabbr
+~5USAGE: .tabbr [^char ~5[^5command~5]]
+~5WHERE: ^5char ~5is a single character you wish to use to do ^5command
+
+~5Use this command when you want to change the talker abbreviations.  This
+~5is helpful if you use other talker codes and are used to ^5<~5, for example,
+~5doing ^5pemote~5.  The ^5command ~5you specify may also be a talker macro.
+
+~5Typing ^5.tabbr ~5on a line by itself will display the talker's current
+~5abbreviations.
+
+~5Typing ^.tabbr ; ~5would delete the global ^5emote ~5abbreviation.
+
+~5EXAMPLES
+  ~5.tabbr
+  ~5.tabbr & shout
+
+~5SEE ALSO
+  ^5.help abbr
+

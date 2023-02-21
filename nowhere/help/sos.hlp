@@ -1,0 +1,10 @@
+^5Help - Sos
+~5USAGE: .sos ^5message
+~5WHERE: ^5message ~5is something you wish to say to the wizards
+
+~5Use this command when you want to send a message to only the Wizards and
+~5Gods that are online.
+
+~5SEE ALSO
+  ^5.help shout
+

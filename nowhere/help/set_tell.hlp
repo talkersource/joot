@@ -1,0 +1,8 @@
+^5Help - Set Tell
+~5USAGE: .set tell [^5on~5/^5off~5]
+
+~5Use this command when you wish to toggle between reading tells, or not.
+
+~5SEE ALSO
+  ^5.help set
+

@@ -1,0 +1,10 @@
+^5Help - Monitor
+~5USAGE: .monitor
+
+~5Use this command when you want to toggle between monitoring echoes.  This
+~5also monitors commands that a normal user doesn't get to see who sent.
+~5(WooHoo and Picture commands, for example.)
+
+~5SEE ALSO
+  ^5.help commands
+

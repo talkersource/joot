@@ -1,0 +1,17 @@
+^5Help - Picture
+~5USAGE: .picture [^5user~5] [^5file~5]
+~5WHERE: ^5user ~5is the only user you wish to see the picture
+       ^5file ~5is the picture name you wish to display
+ 
+~5Use this command when you want to display the contents of a file to all
+~5the users in your current room, or just a single user.  Without specifying
+~5a ^5file~5, it shows you all the file names of pictures you can display.
+
+~5EXAMPLES
+  ~5.picture
+  ~5.picture love
+  ~5.picture bob smile
+ 
+~5SEE ALSO
+  ^5.help woohoo
+

@@ -1,0 +1,10 @@
+^5Help - Shout
+~5USAGE: .shout ^5message
+~5WHERE: ^5message ~5is what you wish to shout to everybody.
+
+~5Use this command when you want to do shout a ^5message ~5to all the other
+~5users on the Talker.
+
+~5SEE ALSO
+  ^5.help tell~5, ^5.help say~5, ^5.help abbr
+

@@ -1,0 +1,12 @@
+^5Help - Purge
+~5USAGE: .purge ^5level days ~5[^5now~5]
+~5WHERE: ^5level ~5is the level you wish to search for old users
+       ^5days ~5is the number of days you wish to check against
+       ^5now ~5must be typed to purge the users (instead of display them)
+ 
+~5Use this command when you wish to purge the talker of users of a given
+^5level ~5that haven't logged on the talker for a given number of ^5days~5.
+ 
+~5SEE ALSO
+  ^5.help examine~5, ^5.help nuke
+

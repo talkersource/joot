@@ -1,0 +1,18 @@
+^5Help - Friend
+~5USAGE: .friend ~5[^5delete~5] ^5user
+~5WHERE: ^5user ~5is a user you wish to be a friend of
+
+~5Use this command when you wish to be notified (with a beep) when certain
+~5users when log on.  By specifying ^5delete~5 and the name of a user, you
+~5will no longer be notified with a beep when that user logs on.
+
+~5Without specifying anything, it will show you your list of friends.
+
+~5EXAMPLES
+  ~5.friend
+  ~5.friend bob
+  ~5.friend del bob
+
+~5SEE ALSO
+  ^5.help enemy
+

@@ -1,0 +1,20 @@
+^5Help - Set
+~5USAGE: .set [^5option~5]
+~5WHERE: ^5option ~5is something you wish to change
+
+~5Here is a list of all available ^5options~5:
+
+~5  alias      autoread   backspace  beeps      bold       brief
+~5  colour     columns    echo       email      exview     fixcr
+~5  feedback   forward    homepage   logoffs    logons     normal
+~5  picture    rows       say        shout      talkmode   topics
+~5  tell       wrap
+
+~5For further help on any option type:
+  ^5.help set ^5option
+
+~5By typing ^5.set ~5by itself, it will show you your current settings.
+
+~5SEE ALSO
+  ^5.help commands
+

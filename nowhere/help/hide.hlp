@@ -1,0 +1,15 @@
+^5Help - Hide
+~5USAGE: .hide [^5user^~5]
+~5WHERE: ^5user ~5is optionally somebody you wish to hide
+ 
+~5Use this command when you want to hide a ^5user ~5from all other people online
+~5that are the same rank as ^5user ~5or lower.  Without specifying a ^5user^~5,
+~5it will hide yourself.
+ 
+~5EXAMPLES
+  ~5.hide bob
+  ~5.hide
+ 
+~5SEE ALSO
+  ^5.help who~5, ^5.help look
+

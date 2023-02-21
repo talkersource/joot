@@ -1,0 +1,17 @@
+^5Help - Help
+~5QUICK TIPS
+
+~51) Everything may be abbreviated.  This includes commands, online user names,
+   ~5room names, and level names.
+
+~52) For help on a particular command type: ~2.help ^2command
+   
+~53) For some commands, not typing anything after the command itself will
+   ~5display settings for that command.
+
+~54) All commands must begin with a period (excluding commands mapped to
+   ~5abbreviations).
+
+~5SEE ALSO
+  ^5.help commands~5, ^5.help abbr
+

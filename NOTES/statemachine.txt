@@ -1,0 +1,51 @@
+Logging In State Machine
+------------------------
+UserNotLoggedIn
+  -> UserLoggingIn
+  -> UserLoginObtainName
+  -> LinkedUserLoggedIn
+  -> LinkedUserLoginObtainName
+  -> LinkedUserLoginObtainPassword
+UserNotLoggedIn
+  -> UserLoginObtainName
+UserLoginObtainName
+  -> UserLoginObtainNewbiePassword
+  -> UserLoginObtainPassword
+  -> UserLoginObtainName
+UserLoginObtainNewbiePassword
+  -> UserLoginObtainVerifyPassword
+  -> UserLoginObtainName
+UserLoginObtainVerifyPassword
+  -> UserLoginObtainName
+  -> UserLoggedIn
+UserLoginObtainPassword
+  -> UserLoginObtainName
+  -> UserLoggedIn
+UserLoggedIn
+  -> UserEditProfile
+  -> UserEditRoomProfile
+
+Linked User State
+-----------------
+LinkedUserLoginObtainName
+  -> LinkedUserLoginObtainPassword
+  -> null
+LinkedUserLoginObtainPassword
+  -> LinkedUserLoggedIn
+  -> null
+LinkedUserLoggedIn (not allowed to transition to other states)
+  -> null
+
+Profile Editor State Machine
+----------------------------
+UserEditProfile
+  -> UserSaveProfile
+UserEditRoomProfile
+  -> UserSaveRoomProfile
+UserSaveProfile
+  -> UserEditProfile
+  -> UserLoggedIn
+UserSaveRoomProfile
+  -> UserEditRoomProfile
+  -> UserLoggedIn
+

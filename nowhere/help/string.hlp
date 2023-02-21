@@ -1,0 +1,20 @@
+^5Help - String
+~5USAGE: .string [^5search~5] [^5##. replace~5]
+~5WHERE: ^5search ~5is part of the string you are looking for.
+       ^5##. replace ~5indicates the new text for a given string
+
+~5Use this command when you want to change one of the talker's strings.
+
+~5EXAMPLES
+  ~5.string say
+  ~5.string 30. [%u] says: %s
+
+~5The first example will show you all talker strings that have the word ^5say
+~5in them.
+
+~5The second example will change string number 30 (specified as ^530.~5) to
+~5the text "[%u] says: %s".
+
+~5SEE ALSO
+  ^5.help read~5, ^5.help wipe
+

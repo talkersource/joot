@@ -1,0 +1,20 @@
+^5Help - Search
+~5USAGE: .search [^5option~5] ^5text
+~5WHERE: ^5text ~5is what you're looking for
+      ^5option ~5is optionally one of:
+                ^5sent ~5- searches the smail you've sent out
+                ^5smail ~5- searches the smail you've received
+                ^5suggest ~5- searches the suggestion board
+
+~5Use this command when you want to look for some text either in one of
+~5several places.  Without specifying an ^5option ~5it will search your
+~5current room's message board.  The other options are explained above.
+
+~5EXAMPLES
+  ~5.search smail bob
+  ~5.search sug bob
+  ~5.search @
+
+~5SEE ALSO
+  ^5.help read~5, ^5.help rmail
+

@@ -1,0 +1,17 @@
+^5Help - Say
+~5USAGE: .say ^5message
+~5WHERE: ^5message ~5is something you want to say.
+ 
+~5Use this command when you want to say something to other users that are in the
+~5same room as you.  This is the default command, which means you don't have to
+~5type ^5.say ~5before you type in your message.
+
+^5.say ~5by itself will show you the last things said within the room.
+ 
+~5EXAMPLES
+  ~5.say Hi!
+  ~5Hello!
+ 
+~5SEE ALSO
+  ^5.help tell~5, ^5.help shout~5, ^5.help cbuff
+

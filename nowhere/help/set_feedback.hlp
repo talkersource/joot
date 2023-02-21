@@ -1,0 +1,13 @@
+^5Help - Set Feedback
+~5USAGE: .set feedback [^5on~5/^5off~5]
+
+~5Use this command when you wish to toggle between reading superfluous talker
+~5feedback, or not.
+
+~5Superfluous feedback includes such things as the talker telling you when
+~5a command you issued succeeds.  Regardless, the talker will inform you
+~5if a command fails.
+
+~5SEE ALSO
+  ^5.help set
+

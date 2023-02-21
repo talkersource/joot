@@ -1,0 +1,11 @@
+^5Help - Free
+~5USAGE: .free ^5user
+~5WHERE: ^5user ~5is somebody you wish to unarrest.
+ 
+~5Use this command when you want to unarrest a user.  This command will:
+  ~51) Indicate to the talker she is no longer arrested
+  ~52) Optionally moves her back to the main room
+
+~5SEE ALSO
+  ^5.help jail
+

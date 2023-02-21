@@ -1,0 +1,16 @@
+^5Help - Swipe
+~5USAGE: .swipe [^5#-##,###~5]
+~5WHERE: ^5#-##,### ~5represents the suggestion board numbers to wipe
+
+~5Use this command when you want to wipe some messages off the anonymous
+~5suggestion board.
+
+~5EXAMPLES
+  ~5.swipe 1-4, 26         Wipe messages 1 through 4 and message 26
+  ~5.swipe 5, 6, 9         Wipe messages 5, 6, and 9
+  ~5.swipe 24-             Wipe all messages after message 24
+  ~5.swipe -13             Wipe all messages up to message 13
+
+~5SEE ALSO
+  ^5.help suggest~5, ^5.help wipe~5, ^5.help write
+

@@ -1,0 +1,17 @@
+Access = Newbie
+Buffer = 5
+Clear = Wizard
+Lock = God
+Read = Wizard
+Review = User
+Topic = User
+View = God
+Warp = Wizard
+Wipe = God
+Write = God
+<desc>
+~5The firm space you once thought was under your feet has winked out of
+~5existence!  A bit shaken up, you find yourself still in one piece, but not
+~5where you should be.  After you check out the list of places to go, you find
+~5the one where you just were has ... vanished!
+</desc>

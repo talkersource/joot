@@ -1,0 +1,12 @@
+^5Help - Broadcast
+~5USAGE: .broadcast [^5message~5]
+~5WHERE: ^5message ~5is the text you wish to broadcast
+ 
+~5Use this command when you want to send an anonymous message to all the 
+~5users currently online.  This is ideally used for emergency 
+~5situations, and shutting down notices.  To review the last several
+~5broadcasts, do not supply a ^5message~5.
+ 
+~5SEE ALSO
+  ^5.help shout
+

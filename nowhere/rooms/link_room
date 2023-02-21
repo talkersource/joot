@@ -1,0 +1,16 @@
+Access = Newbie
+Buffer = 20
+Clear = Wizard
+Lock = God
+Read = Newbie
+Review = Newbie
+Topic = Newbie
+View = Newbie
+Warp = Newbie
+Wipe = Wizard
+Write = User
+<desc>
+~5After coming through the vast realm of Cyber Space, you find yourself
+~5linked to a strange, yet somehow familiar, place.  Be careful what you
+~5say, for you're no longer where you think you are.
+</desc>

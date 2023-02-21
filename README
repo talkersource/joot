@@ -1,0 +1,1419 @@
+-------------------------------------------------
+JOOT: The Java-based Object-Oriented Talker
+      Copyright 1996-1997 by Dave Jarvis
+-------------------------------------------------
+
+				Contents
+							Section
+
+Introduction	.	.	.	.	.	1.0
+	What is JOOT?	.	.	.	.	1.1
+	Where did JOOT come from?	.	.	1.2
+	Why Java?	.	.	.	.	1.3
+
+Requirements	.	.	.	.	.	2.0
+	Software	.	.	.	.	2.1
+	Minimum Hardware.	.	.	.	2.2
+
+Data Files	.	.	.	.	.	3.0
+	abbrs.dat	.	.	.	.	3.1
+	banned.dat	.	.	.	.	3.2
+	commands.dat	.	.	.	.	3.3
+	config.dat	.	.	.	.	3.4
+	levels.dat	.	.	.	.	3.5
+	macros.dat	.	.	.	.	3.6
+	roomlink.dat	.	.	.	.	3.7
+	strings.dat	.	.	.	.	3.8
+
+Room Files	.	.	.	.	.	4.0
+	Name Mangling	.	.	.	.	4.1
+	Location.	.	.	.	.	4.2
+	Format	.	.	.	.	.	4.3
+	Message Board Encryption.	.	.	4.4
+
+User Files	.	.	.	.	.	5.0
+	Location.	.	.	.	.	5.1
+
+Installing, Running, and Connecting to JOOT	.	6.0
+	Get a Java Virtual Machine (JVM).	.	6.1
+	Windows 95/NT	.	.	.	.	6.2
+	Unix	.	.	.	.	.	6.3
+	Macintosh	.	.	.	.	6.4
+	Connecting	.	.	.	.	6.5
+
+Talker Linking	.	.	.	.	.	7.0
+	Talker Data File	.	.	.	7.1
+	Talker Links Data File	.	.	.	7.2
+	Security Issues	.	.	.	.	7.3
+
+Frequently Asked Questions (FAQ)	.	.	8.0
+
+Appendix A - config.dat file
+
+Appendix B - strings.dat file
+
+
+
+-------------------------------------------------
+JOOT: The Java-based Object-Oriented Talker
+-------------------------------------------------
+
+1.0  Introduction
+-------------------------------------------------
+The following section details information that is in no way critical to get
+JOOT up and running.  Most of you may just want to skip on to the next
+Section.  If you already have JOOT running, skip on down to Section 3.
+
+This documentation assumes that the command character is the period (dot).
+
+
+1.1  What is JOOT?
+
+	JOOT is a talker.  That is, a program which allows people to use
+their computers to "talk" with other people.  Anybody, anywhere in the
+world, who has access to an Internet Telnet client is able to use a talker.
+
+	Talkers are typically text-based programs.  That means you don't
+get to hear the other people you are "talking" with, but rather see what
+they type.
+
+	As well, talkers operate in real-time.  The moment you press the
+Enter key, the other person using the Talker gets to see it.  That,
+of course, is an idealistic statement: It takes time for the text to
+traverse the Internet.
+
+	Lastly, talkers provide people with "virtual" rooms and commands
+to help facilitate (and/or control) the environment.
+
+
+1.2  Where did JOOT come from?
+
+	Talkers are not an original idea of mine.  I had used them for
+quite some time before I decided to write my own.  When I did get around
+to writing one, I wound up with OOT.
+
+	OOT was written in C++ by myself and parts by Ken Savage.  The
+commands and feel were based on other talkers I had used.  OOT was a
+fresh start.  One of the few from-scratch talker codes out there.  Most
+are based on NUTS.
+
+	JOOT is a progression along OOT's evolutionary path.  The design
+to OOT was extremely verbose compared with most talkers, however there
+were some flaws and limitations.  The design, for the most part, has been
+carried from OOT to JOOT.
+
+
+1.3  Why Java?
+
+	Aside from the flaws and limitations of OOT's design (and the design
+of other talker codes), the C++ language was not built specifically for
+networked applications.  Java, on the other hand, was created with networking
+in mind.
+
+	C++ does not have the verbose functionality pre-packaged into it that
+Java does.  Not having to worry about releasing memory that was allocated is
+a very big boon.  Platform independence is another.
+
+
+
+-------------------------------------------------
+JOOT: The Java-based Object-Oriented Talker
+-------------------------------------------------
+
+2.0  Requirements
+-------------------------------------------------
+The following section denotes the System Requirements you need in order
+to run JOOT.
+
+
+2.1  Software
+
+	Operating System
+	----------------
+	SunOS, Solaris, OS/2, Linux, MacOS 7.5.5, Windows NT, Windows 95,
+	AIX, and any other Operating System that has a Java Virtual Machine.
+
+	Java Virtual Machine (JVM)
+	--------------------------
+	Any JVM that implements the 1.1 specification, or better.
+		Kaffe - http://www.kaffe.org
+		Sun 1 - http://www.javasoft.com/products/jdk/1.1/jre/index.html
+		Sun 2 - http://www.javasoft.com/products/jdk/1.1/index.html
+		Sun 3 - http://www.blackdown.org (Linux Port)
+		MRJ   - http://devtools.apple.com/mrj
+
+	Note:	The MRJ will only work on 68030 and better machines, and
+		all PowerPCs.
+
+
+2.2  Minimum Hardware
+
+        RAM: 6MB
+        HD : 2MB (without JVM; 6MB with JVM)
+        CPU: 486-66
+
+	I recommend at least 10MB of available RAM for running JOOT.
+
+
+
+-------------------------------------------------
+JOOT: The Java-based Object-Oriented Talker
+-------------------------------------------------
+
+3.0  Data Files
+-------------------------------------------------
+This section details all the major data files used in JOOT as well as what
+to be aware of when editing them.  These files, unless otherwise specified,
+reside in your talker's data/ subdirectory.
+
+
+3.1  abbrs.dat
+
+	This file contains the default abbreviations a user gets when she
+logs on for the first time.
+
+
+3.2  banned.dat
+
+	This file contains the names of all the sites that JOOT will not
+accept new users logging in from.
+
+	NOTE: Any user that already has an account created with your talker
+may continue to use the account, regardless if coming in from a banned site
+or not.  The exception to this is hard banning.  See "ban.hlp".
+
+
+3.3  commands.dat
+
+	This file contains the names of all the commands, and defines two
+other things.  The first is the level required to use the command.  The second
+is a mapping that JOOT uses to execute the command the user typed.
+
+	You may change the name of the command.  You may change the level
+required to use the command.  You should NOT change the Class mapping that
+JOOT uses in the last column (unless you know what you're doing).  The
+results are unpredictable--JOOT may generate an error and cease to operate.
+
+	An example commands.dat file looks something like that shown
+in Figure 3.3.1.
+
+---------------------------------------------------------------------
+Name = afk           Level = Newbie      Class = AfkCmd
+Name = abbr          Level = User        Class = AbbrCmd
+Name = beep          Level = User        Class = BeepCmd
+...                  ...                 ...
+Name = who           Level = Newbie      Class = WhoCmd
+Name = with          Level = Newbie      Class = WithCmd
+Name = wizcast       Level = Wizard      Class = WizcastCmd
+---------------------------------------------------------------------
+		Figure 3.3.1 - Example commands.dat file.
+---------------------------------------------------------------------
+
+	Where each command is listed in the file is very important.  For
+example, if the user typed: ".w", JOOT would interpret this to mean the
+user wishes to use the ".who" command.  Had the user typed: ".wi", JOOT
+would interpret this to mean the user wishes to use the ".with" command.
+Finally, had the user typed: ".wiz", JOOT would interpret this to mean the
+user wishes to use the ".wizcast" command.
+
+	What you should understand from the last paragraph is that when
+a user abbreviates a command, JOOT searches from the top of the file to
+the bottom, looking for a command name which partially (or wholly) matches
+what the user typed.  The first one JOOT finds is the one that gets executed
+for the user.
+
+	By moving lines around you may alter the expected behaviour which
+users have become accustomed.  Be careful.
+
+
+3.4  config.dat
+
+	This file contains information about commons behaviours of talkers
+that a SysOp may wish to change.  You may also use the ".config" command to
+alter the configuration values.
+
+	WARNING: Correctly spell all names of levels IN FULL when changing
+a setting which requires a level name.
+
+	See Appendix A for further explanation on each line.
+
+
+3.5  levels.dat
+
+	This file contains talker-specific information about levels.  Every
+user has a level.  It is the level factor which decides, for the most part,
+if a user is allowed to execute certain commands.  For example, it might not
+be desirable to have new users able to shut down the talker.
+
+	WARNING: Do not edit this file from the shell.  Use the ".levels"
+command to add, remove, and/or rename levels.
+
+
+3.6  macros.dat
+
+	This file contains lists of pseudo-commands that all users have
+access to and all users (that are logged in) may execute at any given time.
+
+	These are also known as socials.  A big advantage to macros in JOOT
+is the ability to customise your talker to suit the users.  No two talkers
+have the exact same command-set.  To clear your private mail, some talkers
+have the command ".cmail".  Others assume you wish to delete your private
+mail, and hence have a ".dmail" command.
+
+	By using talker macros, you can have the best of both worlds.  Merely
+create a macro named ".dmail" and have it simply execute the ".cmail" command.
+Listed in the file as shown in Figure 3.5.1.
+
+---------------------------------------------------------------------
+dmail .cmail *
+laugh ; rolls onto the floor in a quivering mass of chuckle.
+laugh ; laughs at what * said.
+autonewbie .h rules||.desc has read the rules.||.smail TopDog Hi!  I'm new!
+---------------------------------------------------------------------
+                Figure 3.6.1 - Example macros.dat file.
+---------------------------------------------------------------------
+
+	The * gets replaced with whatever the user typed in AFTER the command
+itself.  For example, typing: ".dmail 1,2" results in the command of
+".cmail 1,2" being executed.
+
+	The two laugh macros are possible based on this principle.  By typing
+".laugh" without anything after the command, JOOT knows to use the first
+macro listed.  By typing ".laugh you", JOOT knows to use the second macro
+listed.  For example:
+
+	User Types: .laugh
+	Result is : User rolls onto the floor in a quivering mass of chuckle.
+
+	User Types: .laugh you
+	Result is : User laughs at what you said.
+
+	Common macros include ".think", ".sing", ".wink", and ".laugh".
+
+	The last macro listed is a special talker macro.  It gets run
+whenever a user of the level "Newbie" logs onto the system.  For each
+user level you have, you may make a macro with "auto" prefixing the name
+to be executed each time a user of that level logs in.  This is handy
+for forcing people to read important messages.
+
+
+3.7  roomlink.dat
+
+	This file contains the room to room mappings for the talker.  It
+is this file which JOOT uses to give names to rooms.  That is, it will
+take the first spelling of the room from the first occurrence found in this
+file.
+
+	The first four entries have a specific order and meaning.  Figure
+3.7.1 shows a sample roomlink.dat file (note the lack of quotes).
+
+---------------------------------------------------------------------
+Logon Limbo
+Main Room
+Jail
+Temporary Room
+Link Room
+Main Room > Temple Of Doom
+Temple Of Doom > Ark Room
+Ark Room = Hallway
+Graceland
+---------------------------------------------------------------------
+                Figure 3.7.1 - Example roomlink.dat file.
+---------------------------------------------------------------------
+
+	The first room listed represents the first room that the user sees
+upon connection.  Appropriately called "Logon Limbo", although you can change
+the name to anything you like (see section 4.0 below on naming rooms).  The
+second room listed represents the second room that the user sees after a
+successful login.  The third is where a user goes when arrested (problem
+users).  The fourth room is where a user goes when the room that user is
+in gets deleted.  The fifth room is where, optionally, users that link in
+from another talker will wind up.
+
+	The next line in the file shows that from the "Main Room" a user is
+able to go to "Temple Of Doom".  Unless, of course, "Temple Of Doom" is locked.
+Again, the next line shows that a user can go from "Temple of Doom" to the
+"Ark Room".  The second last line is short-hand.  A user can go from the "Ark
+Room" to the "Hallway", and from the "Hallway" to the "Ark Room".  The last
+line indicates that there is a room called "Graceland" somewhere in the system
+but it is not adjoined to any other room.  (Hence you must "warp" there.)
+
+	The ".build" command can be used to update the roomlink.dat for you,
+while you're online.  For more help, view the build.hlp file.  One point to
+mention, however, is that when you delete a room, only the roomlink.dat
+changes.  The file which represents the room does not get deleted.  This must
+be done from offline.
+
+
+3.8  strings.dat
+
+	This file contains a listing of almost all the strings that JOOT
+has available to it.  Figure 3.8.1 shows an example segment from a typical
+strings.dat file.
+
+---------------------------------------------------------------------
+0. Enter your name: 
+1. ^2Enter your Password: 
+...
+217. ~5%u could not be invited, %w.
+218. ~2%w has invited %u to %r.
+219. ~5%u is already in %r, %w!
+...
+---------------------------------------------------------------------
+                Figure 3.8.1 - Example strings.dat file.
+---------------------------------------------------------------------
+
+	The format of each line is very important.  Each line starts with
+a number.  The number is followed by a period then a single space.  After the
+space comes the string that gets displayed when the corresponding event
+occurs.  Never change the numbers themselves.
+
+	In Figure 3.8.1, for example, the 0th line gets displayed when the
+user connects to the talker.  It may be helpful to note that there is in
+fact a space at the end of both the 0th and 1st lines.  This space (although
+not shown) moves the cursor one space away from the colon.
+
+	Line 218 has %w, %u, and %r on them.  Figure 3.8.2 shows a list of
+all the field indicators and what name gets substituted into them when the
+string is used.
+
+---------------------------------------------------------------------
+%d - User description
+%l - Level name
+%n - Generic Number
+%r - Room name
+%s - Generic string
+%u - User name
+%w - Wizard name
+---------------------------------------------------------------------
+                Figure 3.8.2 - strings.dat field indicators
+---------------------------------------------------------------------
+
+	%d is shown whenever the user logs into the talker, out of the talker,
+or in the listing of users the ".who" command shows.
+	%l is shown at the times when the name of a level is used.  This can
+happen during user promotions, demotions, changing a room's settings, and so
+forth.
+	%n is shown at the times when a numerical result is found.  This can
+happen whenever a command is issued that does some sort of counting.
+	%r is shown at the times when a room name is used.  This happens more
+often than not it seems.
+	%s is a generic string that is used whenever the aspect that should
+be displayed doesn't logically fall into one of the other field indicators.
+Typically it is used for when a user says something.
+	%u is either the user that issued a command, or the user name that
+a command was issued on.  The latter ties into %w.
+	%w is used when a command was issued on another user.  If User A
+issues a command on User B, then %w always represents the name of User A,
+and %u represents the name of User B.  Thus "Wizard Name" should be taken
+with a grain of salt.
+
+	If this is somewhat foggy, I suggest playing around with the
+commands to figure out which does what, and which is used where.  Additionally,
+strings can be changed from online using the ".string" command.  For more
+information on this command, see the string.hlp file, and Appendix B.
+
+
+
+-------------------------------------------------
+JOOT: The Java-based Object-Oriented Talker
+-------------------------------------------------
+
+4.0  Room Files
+-------------------------------------------------
+This section deals with how the room files are set up.
+
+
+4.1  Name Mangling
+
+	In JOOT, the room names listed in the roomlink.dat file undergo
+a simple name mangling.  Any non alpha-numeric characters get removed,
+and spaces get replaced with underscores.  Additionally, all upper-case
+characters are converted to lower case.
+
+	Thus if you had a room in your roomlink.dat called "Sysop's #1 Room",
+the file name you would have to give to corresponding room file name would be
+"sysops_1_room".  From online, everybody would see the room as what gets
+listed in the roomlink.dat file ("Sysop's #1 Room").
+
+
+4.2  Location
+
+	Your roomlink.dat file is within the talker/data directory.  The
+room files themselves, however, are in the talker/rooms directory.
+
+
+4.3  Format
+
+	Each room has the format shown in Figure 4.3.1.
+
+---------------------------------------------------------------------
+Access = Newbie
+Buffer = 20
+Clear = User
+Echo = User
+Lock = Newbie
+Read = Newbie
+Review = Newbie
+Say = Newbie
+Topic = Newbie
+View = Newbie
+Warp = Newbie
+Wipe = Wizard
+Write = User
+<desc>
+~5After coming through the ether known as Logon Limbo, you find yourself
+~5somewhat light-headed, but amidst a friendly crowd.  Relax in the knowledge
+~5that you aren't Somewhere, aren't Nowhere, but are here.
+</desc>
+---------------------------------------------------------------------
+                Figure 4.3.1 - Room file format
+---------------------------------------------------------------------
+
+	Each line with an equals sign (=) specifies the level required to
+perform an action related to the room the user is in.
+
+	"Access" controls general access to the room.
+	"Buffer" is the number of public "says" that the room remembers. 
+	"Clear" controls who can clear the public "says".
+	"Echo" controls who can echo/review echos.
+	"Lock" controls who can lock (or unlock) the room.
+	"Read" controls who can read room's message board.
+	"Review" controls who can read the room's buffer of "says".
+	"Say" controls who can speak/emote.
+	"Topic" controls who can change the room's topic.
+	"View" controls who can see the room.
+	"Warp" controls who can get to the room if it isn't adjoined.
+	"Wipe" controls who can erase messages from the room's message board.
+	"Write" controls who can write to the room's message board.
+
+	Additionally, a room may have a description.  The description is
+typically shown when the user moves (or gets moved) from one room to another.
+It is bracketed by <desc> (meaning the beginning of the room's description)
+and </desc> (meaning the end of the room's description).  Notice that each
+line of the room's description has a ~5 before it starts.  This is the
+colour indicator for dark cyan.
+
+	Since JOOT has no ".load rooms" command (as OOT did), the alternatives
+are to:
+
+	* use the ".build" and ".rset" commands from online; or
+	* make changes to the room file(s), shut the talker down, and reboot
+
+
+4.4  Message Board Encryption
+
+	All message boards in JOOT get encrypted for additional privacy.
+
+
+
+-------------------------------------------------
+JOOT: The Java-based Object-Oriented Talker
+-------------------------------------------------
+
+5.0  User Files
+-------------------------------------------------
+This section deals with the format of the user files.
+
+
+5.1  Location
+
+	The user data files can be found in the joot/talker/users directory:
+
+		users/abbr/a     to users/abbr/z
+		users/commands/a to users/commands/z
+		users/data/a     to users/data/z
+		users/macros/a   to users/macros/z
+		users/people/a   to users/people/z
+		users/profile/a  to users/profile/z
+		users/record/a   to users/record/z
+		users/sent/a     to users/sent/z
+		users/smail/a    to users/smail/z
+
+	The abbr directories store abbreviations.
+	The commands directories store granted and revoked commands.
+	The data directories store settings, passwords, sites, etc.
+	The macros directories store macros.
+	The people directories store a user's friends and enemies.
+	The profile directories store profiles.
+	The record directories store the text a user saw after using .record.
+	The sent directories store smail that the user sent to another user.
+	The smail directories store smail received from another user.
+
+	WARNING: The sent directories and smail directories should not
+be linked together using the Unix "ln" command.  This is because sent
+smail and received smail files both end in ".sml".
+
+
+
+-------------------------------------------------
+JOOT: The Java-based Object-Oriented Talker
+-------------------------------------------------
+
+6.0  Installing, Running, and Configuring JOOT
+-------------------------------------------------
+This section deals with the steps required to install, run, and configure JOOT.
+
+Regardless of your Operating System, the Java Virtual Machine needs to be
+told where to find "Joot.class".  The environment variable CLASSPATH should
+point to the current working directory as well as the all important classes.zip
+file.  Here are examples for Unix and Windows, respectively:
+
+	CLASSPATH=.:/usr/local/bin/java113/lib/classes.zip
+
+	CLASSPATH=.;c:\jdk113\lib\classes.zip
+
+
+6.1  Get a Java Virtual Machine (JVM)
+
+	JOOT runs using version 1.1 of any JVM, or better.
+
+	As JOOT is a text-based Java application, you do not need compatibility
+with Sun's AWT (Another Windowing Toolkit--provision for doing graphics).
+
+
+6.2  Windows 95/NT
+
+	The following steps should help you to install JOOT (note that you
+need PKZIPW to extract the files):
+
+	* Open the File Manager
+	* Select the directory where you downloaded JOOT
+	* Run PKZIPW on the JOOT Zip file
+	* Extract the files to C:\JOOT
+	* If you used WinZip32 instead of PKZIPW run the "create.bat" file to
+	  create directories which don't get extracted from the archive (a
+	  known bug in WinZip)
+
+	The following steps should help to get JOOT running:
+
+	* Bring up a DOS Window
+	* Change to the directory where you unpacked JOOT (C:\JOOT)
+	* Type the following command:
+		start java Joot
+
+	  OR if you installed the JRE (which is smaller than the JDK):
+
+		start jre -cp . Joot
+
+	That should start the JOOT Talker Server as a background process.  As
+it is not a registered Windows Service, the process will most likely terminate
+when you log out of your account.  If "java" is not in your PATH, you will
+have to either execute it directly, or add it to your PATH.
+
+
+6.3  Unix
+
+	The following steps should help you to unpack JOOT:
+
+	* Change to the directory where you downloaded JOOT
+	* Use "gunzip" to uncompress the JOOT .tgz (or .tar.gz) file
+	* Use "tar -xvf" to unarchive the JOOT .tar file
+
+	The following steps should help to get JOOT running:
+
+	* Change to the directory where you unpacked JOOT
+	* If you are using Sun's JVM, type the following command:
+		nohup java Joot &
+	  OR
+		./joot
+
+	* If you have installed Kaffe, type the following command:
+		nohup kaffe Joot &
+	  OR
+		./joot
+
+	If you use the "./joot" command, you may have to edit the file itself.
+
+	That should start the JOOT Talker Server as a background process.  You
+may log out of your account.
+
+
+6.4  Macintosh
+
+	The requirements for the Macintosh that I have thus far are:
+
+	* You must be using System 7.5.5 to run Java Applications
+
+	* From Eric Paulson (eric@house8.com):
+
+	"First you need to get the Java Software developers kit if you want
+to create a Java application for the Macintosh.  A Java process has to be
+started in order to run a Java application.  This is a simple tool which
+accompanies the MRJ SDK called JBinder.  It will create what is called an
+envelope which starts the JVM and runs the application within it.  You just
+drop the class file (Joot.class) onto the JBindery appliaction.  Specify the
+source of the other class files and also set an application creator type.
+From here just follow the directions which accompany the MRJ SDK and save the
+application into the same directory as all the class files.  Now you have a
+clickable Macintosh Java application."
+
+	Many thanks, Eric!
+
+
+
+6.5  Connecting to JOOT
+
+	No specific telnet client is required to connect to JOOT.  ChamTel,
+EWAN, Windows Telnet, TUT, GMud, ZMud, TinyFugue, Mac Telnet, and Unix
+telnet can connect up to JOOT talkers.
+
+	There is also a Java Applet which is a compatible Telnet Client.  You
+can use this on your Talker's homepages to allow connection from the Web
+itself.  It has been tested with Netscape 3.01, Netscape 4.0, and Internet
+Explorer 3.02, AppletViewer, and HotJava.  Dubbed an "ANSI Emulator", it is
+available at:
+
+	http://www.joot.com/products.html
+
+
+
+-------------------------------------------------
+JOOT: The Java-based Object-Oriented Talker
+-------------------------------------------------
+
+7.0  Talker Linking
+-------------------------------------------------
+This section deals with how to link your JOOT talker to another JOOT talker.
+
+
+7.1  Talker Data File
+
+	The first file you will want to modify is your "talkers.dat" file.
+Initially it looks like:
+
+	NAME=Nowhere DIR=nowhere PORT=5000 LINK=5001
+
+	The NAME portion specifies what your talker is named.  When linked,
+the first three letters will be used to indicate the information coming from
+the remote talker.  The DIR portion indicates what directory your talker
+information can be found.  This allows you to specify multiple talkers without
+running JOOT multiple times.  The PORT portion specifies the main port that
+JOOT runs on.  This is the port that people will connect to via Telnet
+programs.  Lastly, the LINK portion specifies the port that other JOOT
+talkers must connect to in order to link up to your talker.
+
+
+7.2  Talker Links Data File
+
+	The second file you want to modify is your "links.dat" file in the
+"data" subdirectory.  The "links.dat" file has the format shown in Figure
+7.2.1.
+
+---------------------------------------------------------------------
+IN=TalkerX PASS=talkerXpassword
+OUT=TalkerY PASS=nowherePassword DNS=nowhere.com LINK=5001
+---------------------------------------------------------------------
+                Figure 7.2.1 - links.dat file Format
+---------------------------------------------------------------------
+
+	The first line shows that the talker is accepting incoming links
+from "TalkerX".  The password TalkerX must use is "talkerXpassword".  Any
+talker you wish to link into you must be informed of its talker-specific
+link password.  This ensures that you don't have rogue talkers linking
+up to you without your permission.  Case is sensitive on talker passwords.
+Thus "TalkerXPassword" is not the same as "talkerXpassword".
+
+	The second line shows that the talker has an outgoing link to
+"TalkerY".  The password "nowherePassword" must be discussed (privately)
+between the System Operators of both talkers.  The DNS portion indicates
+the host name for TalkerY.  Lastly, the System Operator of this talker
+must be informed of TalkerY's link port (usually given at the same time
+as the password is discussed).
+
+
+7.3  Security Issues
+
+	A linked user must already have an account on the remote talker
+that she wishes to link to.  That is, you cannot link to a talker you
+haven't been to via normal telnet at least once.
+
+	A linked user can only do commands on the remote talker that she
+would have access to if normally logged in there.  This means that if
+she is a God on Talker A and a User on Talker B, the only commands she
+can do on Talker B are User commands.
+
+	A banned site usually means that all accounts from that site
+have been removed (nuked).  Since linking requires that you have an
+account on the remote talker _BEFORE_ you can link to it, banned users
+cannot get into your talker from a link.
+
+
+
+-------------------------------------------------
+JOOT: The Java-based Object-Oriented Talker
+-------------------------------------------------
+
+8.0  Frequently Asked Questions (FAQ)
+-------------------------------------------------
+
+Q: Is there still a FAQ?
+A: Yes.
+	See the "FAQ" file in the "NOTES" directory.
+
+
+
+-------------------------------------------------
+JOOT: The Java-based Object-Oriented Talker
+-------------------------------------------------
+
+Appendix A - config.dat file
+-------------------------------------------------
+This appendix briefly explains what each line in the config.dat file means.
+
+MAX_USERS_ONLINE
+	Number of users simultaneously online (maximum of 254).
+
+MAX_TELL_BUFFER
+	Number of tells remembered per user (per session).
+
+MAX_SHOUT_BUFFER
+	Number of shouts remembered by the talker.
+
+MAX_WIZCAST_BUFFER
+	Number of wizcasts remembered by the talker.
+
+MAX_BROADCAST_BUFFER
+	Number of broadcasts remembered by the talker.
+
+MAX_USER_PROFILE_LINES
+	Number of lines in a user's profile.
+
+MAX_USER_MACROS
+	Number of macros a user may have (talker is unlimited).
+
+MAX_USER_ABBRS
+	Number of abbreviations a user may have.
+
+MAX_SENT_SMAILS
+	Number of sent smails remembered per user (across sessions).
+
+MAX_LOGIN_ATTEMPTS
+	Login attempts allowed before user is disconnected.
+
+MIN_ALIAS_LENGTH
+	Minimum length for a user's name (always need at least 1 character).
+
+MIN_PASSWORD_LENGTH
+	Minimum password length required.
+
+MIN_LOGIN_LEVEL
+	Login level required to enter the talker.
+
+MIN_LEVEL_SAVE_USER
+	Login level required to have user data file saved.
+
+MIN_LEVEL_WIZARD
+	Displays more information to a user this level or higher in the
+	".examine" command.
+
+MIN_LEVEL_WHO_WIZARD
+	Displays a * beside the name of any user this level or higher in
+	the ".who" command and ".with" command.
+
+MIN_SHOW_CUMULATIVE_TIME
+	Level required to see another user's cumulative time.
+
+LINK_INTO_LINK_ROOM
+	If a user that links into your talker should go to the Link Room, or
+	into the Main Room.
+
+MOVE_USER_ON_FREE
+	When a jailed user has been freed, if this option is on, the user is
+	moved from the Jail room into the Main room.
+
+SAVE_GRANT_AND_REVOKE
+	If this option is set to on, it saves the command(s) you grant or
+	revoke from a particular user across sessions; otherwise the command is
+	only valid until the user logs out.
+
+BROADCAST_DEMOTE/BROADCAST_PROMOTE
+	Should demotes/promotes be shown to everybody?  [on/off]
+
+RESOLVE_DNS_FOR_IP
+	Should DNS be sought from IP address?  [on/off]
+
+INITIAL_USER_SETTINGS
+	Use this to change what options are set for users that log into the
+	talker the first time.  To alter it, log into JOOT as a new user,
+	either promote that user or grant that user the ".set" command.  Log
+	out, and copy the first number shown in said user's ".dat" file.
+
+	For example, let's say you logged into the talker as "BottomDog".
+	You would use the ".set" command to alter BottomDog's settings, then
+	log out (ensure BottomDog's file was saved; see MIN_LEVEL_SAVE_USER).
+	View the contents of the file:
+		nowhere/users/data/b/bottomdog.dat
+
+	Be sure to substitute the name of your own talker for "nowhere".  You
+	should see something like:
+
+		BottomDog
+		Ui0NBJiWAfo=
+		- a Newbie.
+		Newbie
+		508343224	<-- INITIAL_USER_SETTINGS for config.dat
+		867965258078
+		localhost
+		... etc ...
+
+	Replace the number in your config.dat file with the number shown on
+	the fifth line (the first number in the bottomdog.dat file).
+
+COMMAND_CHAR
+	Character to indicate the start of a command.  If you change this,
+	be sure to update the help files accordingly.
+
+
+
+-------------------------------------------------
+JOOT: The Java-based Object-Oriented Talker
+-------------------------------------------------
+
+Appendix B - strings.dat file
+-------------------------------------------------
+This appendix briefly explains when each line in the strings.dat file is used.
+Pardon the semi-cryptic nature, I haven't the time to put in much more detail
+at the moment.  If somebody would like to undertake this monumental task, I'd
+really appreciate it (that is, adding a few words for extra clarification).
+(First person would get first credit.)
+
+GET_LOGIN_NAME            = 0;
+GET_LOGIN_PASSWORD        = 1;
+GET_NEWBIE_PASSWORD       = 2;
+GET_VERIFY_PASSWORD       = 3;
+
+USER_INVALID_NAME         = 4;
+USER_INVALID_PASSWORD     = 5;
+USER_BAD_PASSWORD         = 6;
+USER_BAD_VERIFY_PASSWORD  = 7;
+USER_MAX_LOGIN_ATTEMPTS   = 8;
+USER_BANNED_SITE          = 9;
+USER_WELCOME              = 10;
+USER_GOODBYE              = 11;
+
+ROOM_SHOW_NAME            = 12; - .look
+ROOM_VIEW_NAME            = 13; - .look <room>
+ROOM_SHOW_TOPIC           = 14;
+ROOM_SHOW_UNLOCKED        = 15;
+ROOM_SHOW_LOCKED          = 16;
+ROOM_SHOW_ADJOINED        = 17;
+ROOM_SHOW_MESSAGES        = 18;
+ROOM_SHOW_USERS           = 19;
+ROOM_INVALID_NAME         = 20;
+
+USER_BAD_COMMAND          = 21;
+USER_ACCESS_DENIED        = 22;
+USER_NEWBIE_DESC          = 24;
+USER_AFK_RETURN           = 25;
+USER_AFK_MESSAGE          = 26;
+USER_SHOW_AFK             = 27;
+USER_LOGON                = 28;
+USER_LOGOFF               = 29;
+USER_SAY                  = 30;
+USER_EMOTE1               = 31;
+USER_EMOTE2               = 32;
+USER_SHOUT                = 33;
+USER_SEMOTE1              = 34;
+USER_SEMOTE2              = 35;
+USER_TELL                 = 36;
+USER_PEMOTE1              = 37;
+USER_PEMOTE2              = 38;
+USER_WIZCAST              = 39;
+USER_EWIZCAST1            = 40;
+USER_EWIZCAST2            = 41;
+USER_SHOW_TELL            = 42;
+USER_SHOW_PEMOTE1         = 43;
+USER_SHOW_PEMOTE2         = 44;
+USER_BROADCAST            = 45;
+CMD_SOS_WHAT              = 46;
+CMD_SOS_SENT              = 47;
+USER_SHOW_NEW_SMAIL       = 48;
+USER_SHOW_OLD_SMAIL       = 49;
+
+USER_SET_TOPIC            = 50;
+USER_SHOW_TOPIC           = 51;
+USER_SET_DESCRIPTION      = 52;
+USER_SHOW_DESCRIPTION     = 53;
+USER_SET_NAME             = 54;
+USER_SHOW_NAME            = 55;
+USER_SET_PASSWORD         = 56;
+USER_IS_ENEMY             = 57;
+
+LIST_BEGIN_USER_SETTINGS  = 58;
+LIST_END_USER_SETTINGS    = 59;
+LIST_BEGIN_LEVELS         = 60;
+LIST_END_LEVELS           = 61;
+LIST_BEGIN_SENT_SMAIL     = 62;
+LIST_END_SENT_SMAIL       = 63;
+LIST_BEGIN_ROOM_SETTINGS  = 64;
+LIST_END_ROOM_SETTINGS    = 65;
+LIST_BEGIN_RANKS          = 66;
+LIST_END_RANKS            = 67;
+LIST_BEGIN_COMMANDS       = 68;
+LIST_END_COMMANDS         = 69;
+LIST_BEGIN_SMAIL          = 70;
+LIST_END_SMAIL            = 71;
+LIST_BEGIN_MSG_BOARD      = 72;
+LIST_END_MSG_BOARD        = 73;
+LIST_BEGIN_SITE           = 74;
+LIST_END_SITE             = 75;
+LIST_BEGIN_FINGER         = 76;
+LIST_END_FINGER           = 77;
+LIST_BEGIN_SGST_BOARD     = 78;
+LIST_END_SGST_BOARD       = 79;
+LIST_BEGIN_REVIEW         = 80;
+LIST_END_REVIEW           = 81;
+LIST_BEGIN_SHOUTS         = 82;
+LIST_END_SHOUTS           = 83;
+LIST_BEGIN_WIZCASTS       = 84;
+LIST_END_WIZCASTS         = 85;
+LIST_BEGIN_TELLS          = 86;
+LIST_END_TELLS            = 87;
+LIST_BEGIN_MACROS         = 88;
+LIST_END_MACROS           = 89;
+LIST_BEGIN_ABBRS          = 90;
+LIST_END_ABBRS            = 91;
+LIST_BEGIN_BANNED_SITES   = 92;
+LIST_END_BANNED_SITES     = 93;
+LIST_BEGIN_INVITED        = 94;
+LIST_END_INVITED          = 95;
+LIST_BEGIN_STRINGS        = 96;
+LIST_END_STRINGS          = 97;
+LIST_BEGIN_ONLINE_USERS   = 98;
+LIST_END_ONLINE_USERS     = 99;
+
+TALKER_LOAD_FAILED        = 100;
+TALKER_LOAD_SUCCESS       = 101;
+TALKER_NEED_LOAD_PARAM    = 102;
+TALKER_INVALID_LOAD_PARAM = 103;
+TALKER_INVALID_HELP       = 104;
+TALKER_MISSING_MAP        = 105;
+TALKER_STRING_CHANGED     = 106;
+TALKER_INVISIBLE_ROOM     = 107;
+TALKER_INVISIBLE_USER     = 108;
+TALKER_PRESS_ENTER_Q      = 109;
+TALKER_GENERIC_OKAY       = 110;
+
+COMMAND_USER_NOT_ONLINE   = 111;
+COMMAND_MULTIPLE_USER     = 112;
+COMMAND_NO_SUCH_USER      = 113;
+COMMAND_NO_SUCH_ROOM      = 114;
+COMMAND_NO_SUCH_LEVEL     = 115;
+COMMAND_NOBODY_ELSE       = 116;
+COMMAND_INVALID_NAME      = 117;
+COMMAND_LOST_CONNECTION   = 118;
+
+TALKER_MAXIMUM_CAPACITY   = 119;
+
+USER_ON_TELLS             = 120;
+USER_OFF_TELLS            = 121;
+USER_ON_SHOUTS            = 122;
+USER_OFF_SHOUTS           = 123;
+USER_ON_PICTURES          = 124;
+USER_OFF_PICTURES         = 125;
+USER_ON_COLOURS           = 126;
+USER_OFF_COLOURS          = 127;
+USER_ON_BOLD              = 128;
+USER_OFF_BOLD             = 129;
+USER_ON_BRIEF             = 130;
+USER_OFF_BRIEF            = 131;
+USER_ON_SAYS              = 132;
+USER_OFF_SAYS             = 133;
+USER_ON_ENEMIES           = 134;
+USER_OFF_ENEMIES          = 135;
+USER_ON_LOGONS            = 136;
+USER_OFF_LOGONS           = 137;
+USER_ON_BROADCASTS        = 138;
+USER_OFF_BROADCASTS       = 139;
+USER_ON_WIZCASTS          = 140;
+USER_OFF_WIZCASTS         = 141;
+USER_ON_FEEDBACK          = 142;
+USER_OFF_FEEDBACK         = 143;
+USER_ON_FRIENDS           = 144;
+USER_OFF_FRIENDS          = 145;
+USER_ON_FIXCR             = 146;
+USER_OFF_FIXCR            = 147;
+USER_ON_WORDWRAP          = 148;
+USER_OFF_WORDWRAP         = 149;
+USER_ON_INVITES           = 150;
+USER_OFF_INVITES          = 151;
+USER_ON_FORWARDING        = 152;
+USER_OFF_FORWARDING       = 153;
+USER_ON_BEEPS             = 154;
+USER_OFF_BEEPS            = 155;
+USER_ON_SOS               = 156;
+USER_OFF_SOS              = 157;
+USER_ON_LOGOFFS           = 158;
+USER_OFF_LOGOFFS          = 159;
+
+USER_ABBR_ADD             = 160;
+USER_ABBR_CHANGE          = 161;
+USER_ABBR_REMOVE          = 162;
+USER_ABBR_NOT_FOUND       = 163;
+USER_ABBR_INVALID         = 164;
+USER_ABBR_FULL            = 165;
+
+CMD_MACRO_ADDED           = 166;
+CMD_MACRO_CHANGED         = 167;
+CMD_MACRO_DELETED         = 168;
+CMD_MACRO_INVALID         = 169;
+CMD_MACRO_ALTERNATE_ADDED = 170;
+CMD_MACRO_FULL            = 171;
+
+CMD_TOPIC_CANNOT          = 172;
+
+USER_ON_CHARMODE          = 232;
+USER_OFF_CHARMODE         = 173;
+USER_ON_EXVIEW            = 174;
+USER_OFF_EXVIEW           = 175;
+USER_ON_AUTOREAD          = 176;
+USER_OFF_AUTOREAD         = 177;
+USER_ON_CUMULATIVE        = 178;
+USER_OFF_CUMULATIVE       = 179;
+
+CMD_PROMOTE_NEED_USER     = 180;
+CMD_PROMOTE_USER_PROMOTED = 181;
+CMD_PROMOTE_CANNOT        = 182;
+
+CMD_PRIVATE_LOCKED        = 183;
+CMD_PRIVATE_UNLOCKED      = 184;
+CMD_PRIVATE_CANNOT        = 185;
+CMD_PRIVATE_LURKER        = 186;
+
+CMD_GO_NOT_ADJOINED       = 187;
+CMD_GO_ROOM_LOCKED        = 188;
+CMD_GO_USER_LEAVES        = 189;
+CMD_GO_USER_ENTERS        = 190;
+CMD_GO_WIZARD_LEAVES      = 191;
+CMD_GO_WIZARD_ENTERS      = 192;
+CMD_GO_CANNOT             = 193;
+CMD_GO_ALREADY_IN_ROOM    = 194;
+
+CMD_RSET_ACCESS           = 195;
+CMD_RSET_BUFFER           = 196;
+CMD_RSET_CLEAR            = 197;
+CMD_RSET_LOCK             = 198;
+CMD_RSET_READ             = 199;
+CMD_RSET_REVIEW           = 200;
+CMD_RSET_TOPIC            = 201;
+CMD_RSET_VIEW             = 202;
+CMD_RSET_WARP             = 203;
+CMD_RSET_WIPE             = 204;
+CMD_RSET_WRITE            = 205;
+CMD_RSET_CANNOT           = 206;
+
+CMD_MOVE_CANNOT           = 207;
+CMD_MOVE_USER_LEAVES      = 208;
+CMD_MOVE_USER_ENTERS      = 209;
+CMD_MOVE_WIZARD_LEAVES    = 210;
+CMD_MOVE_WIZARD_ENTERS    = 211;
+CMD_MOVE_NEED_USER_NAME   = 212;
+CMD_MOVE_IN_ROOM          = 213;
+CMD_MOVE_ROOM_LOCKED      = 248;
+
+CMD_NUKE_CANNOT           = 214;
+CMD_NUKE_SUCCESS          = 215;
+CMD_NUKE_NEED_USER_NAME   = 216;
+
+CMD_LOGIN_NOT_MIN_LEVEL   = 217;
+
+CMD_INVITE_CANNNOT        = 218;
+CMD_INVITE_SUCCESS        = 219;
+CMD_INVITE_IN_ROOM        = 220;
+CMD_INVITE_SHOW_USER      = 221;
+
+CMD_KNOCK_CANNNOT         = 222;
+CMD_KNOCK_SUCCESS         = 223;
+CMD_KNOCK_IN_ROOM         = 224;
+CMD_KNOCK_SHOW_USERS      = 225;
+CMD_KNOCK_NEED_ROOM_NAME  = 226;
+CMD_KNOCK_NOBODY_HOME     = 227;
+CMD_KNOCK_INVITED         = 228;
+CMD_KNOCK_ROOM_OPEN       = 229;
+
+CMD_SMAIL_SUCCESS         = 230;
+CMD_SMAIL_NEED_SMAIL      = 231;
+
+CMD_WRITE_SUCCESS         = 233;
+CMD_WRITE_CANNOT          = 234;
+CMD_WRITE_NEED_WRITE      = 235;
+
+CMD_READ_CANNOT           = 236;
+
+CMD_REVIEW_CANNOT         = 237;
+
+CMD_CLEAR_CANNOT          = 238;
+CMD_CLEAR_SUCCESS         = 239;
+
+CMD_PEMOTE_NEED_PEMOTE    = 240;
+
+CMD_TELL_NEED_TELL        = 241;
+CMD_TELL_USER_IGNORING    = 242;
+
+CMD_SET_SHOW_ROWS         = 243;
+CMD_SET_SET_ROWS          = 244;
+CMD_SET_SHOW_COLUMNS      = 245;
+CMD_SET_SET_COLUMNS       = 246;
+CMD_SET_INVALID_OPTION    = 247;
+
+CMD_CMAIL_CLEARED_SENT    = 249;
+CMD_CMAIL_CLEAR_WHICH     = 250;
+CMD_CMAIL_CLEARED_ALL     = 251;
+CMD_CMAIL_SUCCESS         = 252;
+
+CMD_PASSWORD_CHANGED      = 253;
+CMD_PASSWORD_INVALID      = 254;
+CMD_PASSWORD_NEED_PWD     = 255;
+
+CMD_DEMOTE_NEED_USER      = 256;
+CMD_DEMOTE_USER_DEMOTED   = 257;
+CMD_DEMOTE_CANNOT         = 258;
+
+CMD_WIPE_WIPE_WHICH       = 259;
+CMD_WIPE_SUCCESS          = 260;
+CMD_WIPE_NONE             = 261;
+
+CMD_LEVELS_NO_DELETE      = 262;
+CMD_LEVELS_RENAME_WHAT    = 263;
+
+CMD_KILL_NEED_USER        = 264;
+CMD_KILL_SUCCESS          = 265;
+CMD_KILL_CANNOT           = 266;
+
+CMD_EXAMINE_BEGIN         = 267;
+CMD_EXAMINE_END           = 268;
+CMD_EXAMINE_USER_ONLINE   = 269;
+CMD_EXAMINE_MORE_INFO     = 270;
+
+CMD_MONITOR_ON            = 271;
+CMD_MONITOR_OFF           = 272;
+
+CMD_CONFIG_BEGIN          = 273;
+CMD_CONFIG_END            = 274;
+CMD_CONFIG_SHOW           = 275;
+CMD_CONFIG_CHANGED        = 276;
+
+CMD_CHPASS_NEED_USER      = 277;
+CMD_CHPASS_NEED_PWD       = 278;
+CMD_CHPASS_SUCCESS        = 279;
+CMD_CHPASS_INVALID        = 280;
+
+CMD_INFORMATION_BEGIN     = 281;
+CMD_INFORMATION_ROOM      = 282;
+CMD_INFORMATION_CONTINUE  = 283;
+CMD_INFORMATION_SAVE      = 284;
+CMD_INFORMATION_NOT_SAVED = 285;
+CMD_INFORMATION_SAVED_U   = 286;
+CMD_INFORMATION_SAVED_R   = 287;
+CMD_INFORMATION_NEXT_LINE = 288;
+
+CMD_VIEW_BEGIN            = 289;
+CMD_VIEW_END              = 290;
+
+CMD_JOIN_USER_LEAVES      = 291;
+CMD_JOIN_USER_ENTERS      = 292;
+CMD_JOIN_WIZARD_LEAVES    = 293;
+CMD_JOIN_WIZARD_ENTERS    = 294;
+CMD_JOIN_NEED_USER_NAME   = 295;
+CMD_JOIN_IN_ROOM          = 296;
+CMD_JOIN_ROOM_LOCKED      = 297;
+CMD_JOIN_CANNOT           = 298;
+
+CMD_PURGE_LIST_BEGIN      = 299;
+CMD_PURGE_LIST_END        = 300;
+CMD_PURGE_NONE            = 301;
+CMD_PURGE_SUCCESS         = 302;
+CMD_PURGE_CANNOT          = 303;
+
+CMD_SET_SHOW_EMAIL        = 304;
+CMD_SET_SET_EMAIL         = 305;
+CMD_SET_SHOW_HOMEPAGE     = 306;
+CMD_SET_SET_HOMEPAGE      = 307;
+CMD_SET_SHOW_GENDER       = 308;
+CMD_SET_SET_GENDER        = 309;
+
+CMD_BUILD_NEED_PARAMS     = 310;
+CMD_BUILD_CANNOT          = 311;
+CMD_BUILD_CREATED_ROOM    = 312;
+CMD_BUILD_EXISTS          = 313;
+CMD_BUILD_RENAME_SUCCESS  = 314;
+CMD_BUILD_INVALID_JOIN_CH = 315;
+CMD_BUILD_ROOM_JOINED     = 316;
+CMD_BUILD_ROOM_DISJOINED  = 317;
+CMD_BUILD_MOVED_ROOM_DEL  = 318;
+CMD_BUILD_NO_DELETE_TEMP  = 319;
+
+CMD_SAMESITE_CANNOT       = 320;
+CMD_SAMESITE_LIST_BEGIN   = 321;
+CMD_SAMESITE_LIST_END     = 322;
+CMD_SAMESITE_FROM_SITE    = 323;
+
+CMD_LINK_LINKED_NO_LINK   = 324;
+CMD_LINK_INVALID_TALKER   = 325;
+CMD_LINK_BAD_HOST_NAME    = 326;
+CMD_LINK_CONNECT_CLOSED   = 327;
+CMD_LINK_ACCESS_DENIED    = 328;
+CMD_LINK_PLEASE_WAIT      = 329;
+CMD_LINK_USER_LOGIN       = 330;
+CMD_LINK_NOT_LINKED_YET   = 331;
+CMD_LINK_CONNECT_DIED     = 332;
+CMD_LINK_USER_LOGOUT      = 333;
+CMD_LINK_ALREADY_CONNECT  = 334;
+
+CMD_BANSITE_NOT_LOCALHOST = 335;
+CMD_BANSITE_IS_BANNED     = 336;
+CMD_BANSITE_BANNED        = 337;
+CMD_BANSITE_NOT_BANNED    = 338;
+CMD_BANSITE_UNBANNED      = 339;
+
+USER_ON_TOPIC             = 340;
+USER_OFF_TOPIC            = 341;
+
+CMD_GRANT_WHAT_TO_WHO     = 342;
+CMD_GRANT_NOT_FOUND       = 343;
+CMD_GRANT_SUCCESS         = 344;
+CMD_GRANT_NEW_COMMAND     = 345;
+
+CMD_REVOKE_WHAT_FROM_WHO  = 346;
+CMD_REVOKE_NOT_FOUND      = 347;
+CMD_REVOKE_SUCCESS        = 348;
+CMD_REVOKE_NEW_COMMAND    = 349;
+LIST_BEGIN_GRANT_REVOKE   = 350;
+LIST_END_GRANT_REVOKE     = 351;
+
+CMD_WHERE_LIST_BEGIN      = 352;
+CMD_WHERE_LIST_END        = 353;
+CMD_WHERE_NORMAL          = 354;
+CMD_WHERE_LINKED_TO       = 355;
+CMD_WHERE_AVAILABLE_LINKS = 356;
+
+CMD_PICTURE_WHO_FROM      = 357;
+CMD_PICTURE_LIST_BEGIN    = 358;
+CMD_PICTURE_LIST_END      = 359;
+CMD_PICTURE_SUCCESS       = 360;
+CMD_PICTURE_NOT_FOUND     = 361;
+CMD_PICTURE_IGNORED       = 362;
+
+CMD_SET_CMDMODE_ON        = 363;
+CMD_SET_CMDMODE_OFF       = 364;
+
+CMD_BROADCAST_LIST_BEGIN  = 365;
+CMD_BROADCAST_LIST_END    = 366;
+
+CMD_SET_ECHO_ON           = 367;
+CMD_SET_ECHO_OFF          = 368;
+
+COMMAND_CORRUPT_USER_FILE = 369;
+
+CMD_LOGON_JAILED_USER     = 370;
+CMD_LOGOFF_JAILED_USER    = 371;
+
+CMD_JAIL_NEED_USER_NAME   = 372;
+CMD_JAIL_SUCCESS          = 373;
+CMD_JAIL_CANNOT           = 374;
+CMD_JAIL_ALREADY_DONE     = 375;
+
+CMD_FREE_NEED_USER_NAME   = 376;
+CMD_FREE_SUCCESS          = 377;
+CMD_FREE_CANNOT           = 378;
+CMD_FREE_ALREADY_DONE     = 379;
+
+CMD_PTELL_WHICH_PICTURE   = 380;
+
+CMD_SHOUT_CANNOT          = 381;
+
+CMD_STUN_NEED_USER_NAME   = 382;
+CMD_STUN_TELL_STUNNER     = 383;
+CMD_STUN_TELL_STUNNEE     = 384;
+CMD_STUN_CANNOT           = 385;
+CMD_STUN_ATTEMPT          = 386;
+CMD_STUN_ALREADY_DONE     = 387;
+
+CMD_UNSTUN_NEED_USER_NAME = 388;
+CMD_UNSTUN_TELL_STUNNER   = 389;
+CMD_UNSTUN_TELL_STUNNEE   = 390;
+CMD_UNSTUN_CANNOT         = 391;
+CMD_UNSTUN_ALREADY_DONE   = 392;
+
+CMD_TELL_CANNOT_RESPOND   = 393;
+
+CMD_MUZZLE_NEED_USER_NAME = 394;
+CMD_MUZZLE_TELL_MUZZLER   = 395;
+CMD_MUZZLE_TELL_MUZZLEE   = 396;
+CMD_MUZZLE_CANNOT         = 397;
+CMD_MUZZLE_ATTEMPT        = 398;
+CMD_MUZZLE_ALREADY_DONE   = 399;
+
+CMD_UNMUZZLE_NEED_USER_NAME = 400;
+CMD_UNMUZZLE_TELL_MUZZLER   = 401;
+CMD_UNMUZZLE_TELL_MUZZLEE   = 402;
+CMD_UNMUZZLE_CANNOT         = 403;
+CMD_UNMUZZLE_ALREADY_DONE   = 404;
+
+CMD_SUGGEST_WHAT          = 405;
+CMD_SUGGEST_CANNOT        = 406;
+CMD_SUGGEST_SUCCESS       = 407;
+CMD_SUGGEST_BEGIN         = 408;
+CMD_SUGGEST_END           = 409;
+
+CMD_SWIPE_WHICH           = 410;
+CMD_SWIPE_SUCCESS         = 411;
+CMD_SWIPE_NONE            = 412;
+
+LIST_BEGIN_LOGOFFS        = 413;
+LIST_END_LOGOFFS          = 414;
+
+CMD_ECHO_CANNOT           = 415;
+CMD_ECHO_LIST_BEGIN       = 416;
+CMD_ECHO_LIST_END         = 417;
+
+CMD_RSET_ECHO             = 418;
+CMD_RSET_SAYS             = 419;
+
+CMD_SAY_CANNOT            = 420;
+CMD_EMOTE_CANNOT          = 421;
+
+CMD_BOT_BOT_WHO           = 422;
+
+CMD_RECORD_DIVIDER_BEGIN  = 423;
+CMD_RECORD_DIVIDER_END    = 424;
+CMD_RECORD_BEGIN          = 425;
+CMD_RECORD_END            = 426;
+CMD_RECORD_RECORDING      = 427;
+
+CMD_WIPE_CANNOT           = 428;
+
+CMD_MREC_NEED_EMAIL       = 429;
+CMD_MREC_FAILED           = 430;
+CMD_MREC_SUCCEEDED        = 431;
+CMD_MREC_NO_RECORD        = 432;
+
+CMD_RECORD_DELETED        = 433;
+
+LIST_BEGIN_FRIENDS        = 434;
+LIST_END_FRIENDS          = 435;
+CMD_FRIEND_NOT_FRIEND     = 436;
+CMD_FRIEND_REMOVED        = 437;
+CMD_FRIEND_ALREADY_FRIEND = 438;
+CMD_FRIEND_ADDED          = 439;
+
+LIST_BEGIN_ENEMIES        = 440;
+LIST_END_ENEMIES          = 441;
+CMD_ENEMY_NOT_ENEMY       = 442;
+CMD_ENEMY_REMOVED         = 443;
+CMD_ENEMY_ALREADY_ENEMY   = 444;
+CMD_ENEMY_ADDED           = 445;
+
+CMD_SMAIL_ENEMY           = 446;
+
+CMD_HIDE_CANNOT           = 447;
+CMD_HIDE_INVISIBLE        = 448;
+CMD_HIDE_VISIBLE          = 449;
+
+CMD_INVITE_CANNOT         = 450;
+
+LIST_BEGIN_SEARCH         = 451;
+LIST_END_SEARCH           = 452;
+CMD_SEARCH_WHAT_FOR       = 453;
+

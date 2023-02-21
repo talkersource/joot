@@ -1,0 +1,11 @@
+^5Help - Kill
+~5USAGE: .kill ^user
+~5WHERE: ^5user ~5is somebody you wish to remove from the Talker.
+ 
+~5Use this command when you want to forcibly cause another user to quit from
+~5the Talker.  God's may kill any other user, Wizards may only kill users of
+~5lower rank.
+ 
+~5SEE ALSO
+  ^5.help site
+

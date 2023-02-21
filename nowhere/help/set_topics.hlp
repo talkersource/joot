@@ -1,0 +1,9 @@
+^5Help - Set Topics
+~5USAGE: .set topics [^5on~5/^5off~5]
+
+~5Use this command when you wish to toggle between seeing the topic get
+~5changed or not.
+
+~5SEE ALSO
+  ^5.help set
+

@@ -1,0 +1,19 @@
+^5Help - Abbr
+~5USAGE: .abbr [^char ~5[^5command~5]]
+~5WHERE: ^5char ~5is a single character you wish to use to do ^5command
+
+~5Use this command when you want to change any of your abbreviations.  This
+~5is helpful if you use other talker codes and are used to ^5<~5, for example,
+~5doing ^5pemote~5.  The ^5command ~5you specify may also be a macro.
+
+~5Typing ^5.abbr ~5on a line by itself will display all your current abbreviations.
+
+~5Typing ^.abbr ; ~5would delete your ^5emote ~5abbreviation.
+
+~5EXAMPLES
+  ~5.abbr
+  ~5.abbr & shout
+
+~5SEE ALSO
+  ^5.help commands
+

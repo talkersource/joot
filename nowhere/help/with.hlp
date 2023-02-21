@@ -1,0 +1,15 @@
+^5Help - With
+~5USAGE: .with [^5user~5]
+~5WHERE: ^user ~5is the name of a popular person
+
+~5Use this command when you want to see what people are in the same room
+~5as another user.  Without specifying another user on the system, it will
+~5default to showing you the users in your room.
+
+~5EXAMPLES
+  ~5.with
+  ~5.with bob
+
+~5SEE ALSO
+  ^5.help who
+

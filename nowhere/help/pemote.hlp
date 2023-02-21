@@ -1,0 +1,14 @@
+^5Help - Pemote
+~5USAGE: .pemote ^5user message
+~5WHERE: ^5user ~5is a user (currently online) you wish to send an emote to.
+       ^5message ~5is what you wish to emote to ^5user~5.
+
+~5Use this command when you want to send a private emote to another user.
+~5Nobody but the other ^5user ~5will see the ^5message ~5you send.
+
+~5EXAMPLES
+  ~5.pemote bob smiles.
+
+~5SEE ALSO
+  ^5.help tell~5, ^5.help emote~5, ^5.help semote~5, ^5.help abbr
+

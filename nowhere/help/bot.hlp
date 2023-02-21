@@ -1,0 +1,12 @@
+^5Help - Bot
+~5USAGE: .bot ^5user
+~5WHERE: ^5user ~5is a user whose Bot status you wish to toggle
+
+~5Use this command when there is a user you know is computer-driven that
+~5should be using the Bot Protocol.  The Bot Protocol is specifically
+~5designed to allow a Bot which uses it to frequent other talkers which
+~5use the Bot Protocol without modification.
+
+~5SEE ALSO
+  ^5.help who
+

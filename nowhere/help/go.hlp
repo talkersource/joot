@@ -1,0 +1,14 @@
+^5Help - Go
+~5USAGE: .go ^5room
+~5WHERE: ^5room ~5is the name of an available room
+
+~5Use this command when you want to go to another room on the talker.  Without
+~5specifying a room, it takes you back to the main room.
+
+~5EXAMPLES
+  ~5.go
+  ~5.go main
+
+~5SEE ALSO
+  ^5.help rooms~5, ^5.help map
+

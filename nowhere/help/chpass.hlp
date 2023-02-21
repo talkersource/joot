@@ -1,0 +1,10 @@
+^5Help - Chpass
+~5USAGE: .chpass ^5user password
+~5WHERE: ^5user ~5is the user whose password is going to change
+       ^5password ~5is the user's new password
+ 
+~5Use this command when you want to change another user's password.
+
+~5SEE ALSO
+  ^5.help password
+

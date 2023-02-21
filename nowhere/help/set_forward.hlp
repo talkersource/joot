@@ -1,0 +1,9 @@
+^5Help - Set Forward
+~5USAGE: .set forward [^5on~5/^5off~5]
+
+~5Use this command when you wish to toggle between your smail being sent
+~5to your E-mail address, or not.
+
+~5SEE ALSO
+  ^5.help set~5, ^5.help set email
+

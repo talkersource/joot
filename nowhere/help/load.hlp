@@ -1,0 +1,18 @@
+^5Help - Load
+~5USAGE: .load ^5option
+~5WHERE: ^5option ~5is one of:
+       ^5abbrs    ~5- new version of talker abbreviations (same as ^5tabber~5)
+       ^5banned   ~5- new banned sites
+       ^5commands ~5- new levels/names for commands, or new commands
+       ^5config   ~5- new configuration settings
+       ^5links    ~5- new links
+       ^5macros   ~5- new talker macros
+       ^5strings  ~5- new version of strings.dat
+       ^5tabbrs   ~5- new version of talker abbreviations
+ 
+~5You do not need to shut the talker down to issue this command.  The changes
+~5are effective immediately.
+ 
+~5SEE ALSO
+  ^5.help string~5, ^5.help rset
+

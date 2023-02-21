@@ -1,0 +1,8 @@
+^5Help - Set Fixcr
+~5USAGE: .set fixcr [^5on~5/^5off~5]
+
+~5Use this command when the screen looks double-spaced, or jagged.
+
+~5SEE ALSO
+  ^5.help set
+

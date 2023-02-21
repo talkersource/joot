@@ -1,0 +1,15 @@
+^5Help - Smail
+~5USAGE: .smail ^5user message
+~5WHERE: ^5user ~5is an alias
+       ^5message ~5is a message you wish them to get
+
+~5Use this command when you want to leave a ^5message to ^5user ~5that can be
+~5read later.  This works even if ^5user ~5is offline.  If they are online,
+~5they will be notified immediately that you have written them smail.
+
+~5Typing ^5.smail ~5on a line by itself will show you the last 10 smails you
+~5sent out.
+
+~5SEE ALSO
+  ^5.help rmail~5, ^5.help cmail
+

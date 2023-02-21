@@ -1,0 +1,17 @@
+^5Help - Enemy
+~5USAGE: .enemy ~5[^5delete~5] ^5user
+~5WHERE: ^5user ~5is somebody you wish to ignore
+
+~5Use this command when you wish to be ignore everything a certain user
+~5does.  This includes smail, private tells, movement, logins, etc.
+
+~5Without specifying anything, it will show you your list of enemies.
+
+~5EXAMPLES
+  ~5.enemy
+  ~5.enemy bob
+  ~5.enemy del bob
+
+~5SEE ALSO
+  ^5.help friend
+

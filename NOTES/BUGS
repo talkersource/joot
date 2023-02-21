@@ -1,0 +1,34 @@
+-------------------------------------------------
+JOOT: The Java-based Object-Oriented Talker
+      Copyright 1996-1997 by Dave Jarvis
+-------------------------------------------------
+
+Known bugs in JOOT v1.7
+-------------------------------------------------
+
+High Severity
+-------------------------------------------------
+  * "thangalin.dat" at "God" level (used for testing; please change to "User")
+  * Passwords now get echo'd upon login (because some bad telnet clients get
+    confused when sent the Telnet Protocol; password echo will be a user set
+    option)
+
+Medium Severity
+-------------------------------------------------
+  * Screen pagination doesn't work if you used a macro on a command which
+    displays more than 1 screen
+  * Echo does not seem to work for some clients
+    - One possible fix is to try toggling ".set echo" a few times.
+  * Number of messages on public message boards can get out of synch
+
+Low Severity
+-------------------------------------------------
+  * .hide doesn't hide your name in all circumstances
+  * Sometimes -128 will show up as site IP addresses
+  * .revoke monitor  doesn't unset a user's monitoring ability
+  * .rmail new	shows all mail, sometimes
+  * .set auto	doesn't always read your new smail
+  * Not compensating for talker-name link prefix on "word-wrap"
+  * User can leave while editing and it doesn't show her logging off
+  * .read through link doesn't show enough buffer.
+

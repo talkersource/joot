@@ -1,0 +1,11 @@
+^5Help - View
+~5USAGE: .view ^5user
+~5WHERE: ^5user ~5is a user you want to view
+ 
+~5Use this command when you want to look up a ^5user's ~5profile.  If the
+^5user ~5is online, you may abbreviate their alias.  If the ^5user ~5is
+~5offline, you must specify their alias in full.
+
+~5SEE ALSO
+  ^5.help information~5, ^5.help examine
+

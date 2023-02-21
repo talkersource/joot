@@ -1,0 +1,10 @@
+^5Help - Invite
+~5USAGE: .invite ^5user
+~5WHERE: ^5user ~5is somebody that is currently online
+
+~5Use this command when you want to invite another user into the room you
+~5are in.  There is no way to uninvite a user once they have been invited.
+
+~5SEE ALSO
+  ^5.help join~5, ^5.help go~5, ^5.help private
+

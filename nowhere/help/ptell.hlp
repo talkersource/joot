@@ -1,0 +1,12 @@
+^5Help - Ptell
+~5USAGE: .ptell [^5user file~5]
+~5WHERE: ^5user ~5is the user you wish to send the file to
+       ^5file ~5is a file you wish to display
+ 
+~5Use this command when you want to display the contents of a file to a
+~5particular user online.  Without specifying any user or file, this command
+~5displays all available pictures that may be displayed to a given user.
+
+~5SEE ALSO
+  ^5.help picture~5, ^5.help set picture
+

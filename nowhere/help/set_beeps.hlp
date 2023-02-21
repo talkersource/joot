@@ -1,0 +1,9 @@
+^5Help - Set Beeps
+~5USAGE: .set beeps [^5on~5/^5off~5]
+
+~5Use this command when you wish to toggle between getting audible beeps,
+~5and "netting in stealth".
+
+~5SEE ALSO
+  ^5.help set
+

@@ -1,0 +1,19 @@
+Access = God
+Buffer = 15
+Clear = Wizard
+Lock = Wizard
+Read = User
+Review = User
+Topic = User
+View = God
+Warp = God
+Wipe = God
+Write = User
+<desc>
+~5Surrounded by a surreal Darkness, an eternal longing encompasses your soul.
+~5A hollow plink of water echos far off to your left.  The stillness of the
+~5pitch which blinds you, seems to deafen you as well.  The scent of must
+~5impales your sinuses with each careful footfall you make forward.  It seems
+~5that nobody has visited this part of the ship for years.  It suddenly
+~5occurs to you that there just might be a good reason why ...
+</desc>

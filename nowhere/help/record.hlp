@@ -1,0 +1,22 @@
+^5Help - Record
+~5USAGE: .record [^5delete~5]
+ 
+~5Use this command when you want to toggle between having everything you see
+~5being saved or not.  It defaults to being off.  Nobody can turn this option
+~5on except you, and it automatically shuts off when you log out -- if you
+~5haven't turned it off beforehand.
+
+~5This is a powerful command, and should be used with caution.  It records
+^5everything ~5that appears on your screen.  This includes private
+~5tells, private smail (if you read it while recording), shouts, logons,
+~5logoffs, etc.
+
+~5To start recording, issue the command.  To stop, issue the command again.
+~5No previous recording session is deleted unless explicitly done by 
+~5specifying the ^5delete ~5parameter.  Note: The System Operator may view
+~5(or delete) your record file at any time before you delete it.
+
+~5Two tiny red periods (and possibly the word "record") will appear after
+~5every seven commands to indicate that the session is being recorded.  This
+~5is to remind that you are recording.
+

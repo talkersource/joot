@@ -1,0 +1,16 @@
+^5Help - Read
+~5USAGE: .read [^5#-##,###~5]
+~5WHERE: ^5#-##,###~5 represents the message board numbers to read
+
+~5Use this command when you want to read the message board of the current room.
+
+~5EXAMPLES
+  ~5.read                  Read all of the messages
+  ~5.read 1-4, 26          Read messages 1 through 4 and message 26
+  ~5.read 5, 6, 9          Read messages 5, 6, and 9
+  ~5.read 24-              Read the next 24 messages after message 24
+  ~5.read -13              Read all messages up to message 13
+
+~5SEE ALSO
+  ^5.help write~5, ^5.help wipe
+

@@ -1,0 +1,23 @@
+^5Help - Bansite
+~5USAGE: .bansite [^5delete~5] [^5!~5]^5address
+~5WHERE: ^5address ~5is part of the name of the address you want to ban
+       ^5delete ~5indicates to take ^5address ~5off the banned sites list
+ 
+~5Use this command when you want to ban a site.  By prepending an exclamation
+~5point to the site name, you disallow ALL USERS (including those that
+~5already have accounts) from a given site.  Otherwise, you disallow only
+~5the new users from the specified ^5address~5.
+ 
+~5EXAMPLES
+  ~5.bansite !microsoft
+  ~5.bansite del java.sun.com
+
+~5In the first example, any site which contains "microsoft" would no longer
+~5be permitted to connect to the talker.  Includes "gates.microsoft.com".
+
+~5The second example removes the banning (i.e., permits logging on) from any
+~5site containing "java.sun.com".
+ 
+~5SEE ALSO
+  ^5.help kill~5, ^5.help nuke
+

@@ -1,0 +1,18 @@
+bring .move *
+entpro .information
+ignore .set * off
+joot .help joot
+kiss ; gives everybody a kiss.
+kiss ; kisses * lightly on the cheek.
+listen .set * on
+oot .help joot
+rules .help rules
+sing ; <^8sings^>: *
+sing ; sings aloud: ^8We ~8are ~8the ^8champions, ~8my ^8friends~8!
+socials .h socials
+talkers .help talkers
+think ; thinks ^1. ^5o ^7O^ ( * )
+think ; thinks crazy thoughts about living in Rome, 200 A.D.
+wink ; winks at *, somewhat flirtatiously.
+wink ; winks surreptitiously.
+wrap .set wrap

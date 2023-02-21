@@ -1,0 +1,17 @@
+^5Help - Colours
+~5USAGE: .colours
+ 
+~5To use colour, merely type a number immediately following either of the colour
+~5indicator characters.  As shown:
+
+~5~~1 = ~1Blue ~5~~2 = ~2Green ~5~~3 = ~3Red ~5~~4 = ~4Magenta ~5~~5 = ~5Cyan ~5~~6 = ~6Yellow
+~5^^1 = ^1Blue ~5^^2 = ^2Green ~5^^3 = ^3Red ~5^^4 = ^4Magenta ~5^^5 = ^5Cyan ~5^^6 = ^6Yellow
+
+~5~~7 = ~7Lightgrey^ ~5~~8 = ~8R~8a~8n~8d~8o~8m
+~5^^7 = ^7White^     ~5^^8 = ^8R^8a^8n^8d^8o^8m
+
+^5Note: ~5Even if you do not see the colours, you can still use them.
+ 
+~5SEE ALSO
+  ^5.help set
+

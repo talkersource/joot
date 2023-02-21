@@ -1,0 +1,15 @@
+* .rset expire 50/never
+* .rooms wiz: show rooms of that level (or higher)
+* Wiz (given level) rooms only read from list.
+* FwdSmail > Threshold.
+* .off  <- shuts off everything from the talker
+* .on   <- undoes the .off
+* Language Parser classes (Language subdirectory)
+
+* # of new users per day that log in
+
+* Show who is on phone list/have phonetell buffer.
+* Don't show who is on the phone list per tell.
+
+Config Option = MAX_NEW_USERS_PER_DAY
+
