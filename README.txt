@@ -198,6 +198,17 @@ distribute any portion of JOOT or its documentation.
 
 9.0	License
 
+*** ADDED BY TALKERSOURCE.COM (2023) ***
+
+Copyright holder Dave Jarvis granted permission via e-mail for
+the TalkerSource.com archive to host and distribute, via GitHub,
+copies of JOOT re-licensed under the terms of the MIT free open-
+source software license, which can be found in the LICENSE file
+alongside this README.txt.  The license text below contains the
+unmodified, original terms, preserved for historical reference.
+
+*** END OF TALKERSOURCE.COM ADDENDUM ***
+
 This license ("License") contains rights and restrictions
 associated with use of the accompanying software. Read the
 License carefully before using the Software.  By using the
