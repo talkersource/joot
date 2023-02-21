@@ -1,0 +1,21 @@
+' This program is run whenever the echo command is invoked
+
+say$ = arg$ + "\r\n"
+temp$ = arg$
+
+invoke %st = com.joot.lib.StrUtil()
+
+th$ = "thangalin"
+index = 0
+invoke temp$ = %st lowerCase( temp$ )
+invoke index = %st indexOf( temp$, th$ )
+if index <> -1 then goto noEchoThangalin
+
+enum users in %room
+  print %enumuser say$
+enum
+
+end
+
+noEchoThangalin:
+  print %user "Using Thangalin's name is naughty.\r\n"

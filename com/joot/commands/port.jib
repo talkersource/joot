@@ -1,0 +1,58 @@
+' This program is run whenever the port command is invoked
+
+if arg$ = "" then goto showHelp
+
+' Intialize constants
+SPACE$ = " "
+ONE = 1
+
+' Initialize variables.
+option$ = ""
+port$ = ""
+
+' Create a reference to the String Util class.
+invoke %strUtil = com.joot.lib.StrUtil()
+
+' Divide the parameter into two parts: add/remove option and port #
+invoke option$ = %strUtil leftStr( arg$, ONE )
+invoke port$ = %strUtil rightStr( arg$, ONE )
+
+' Are we adding or removing a port?
+if option$ = "+" then goto addPort
+if option$ = "-" then goto removePort
+goto showHelp
+
+showHelp:
+  print %user "Usage: port <+/-><port number>\r\n"
+  print %user "Where: <+/-> indicates request to add or remove a port\r\n"
+  print %user "       <port number> is a number between 1024 and 65000\r\n"
+  print %user "E.g. : 'port +5003' will try to add port 5003\r\n"
+  print %user "E.g. : 'port -5004' will remove port 5004\r\n"
+  end
+
+addPort:
+  print %user "Attempting to activate port " + port$ + " ... Please wait ...\r\n"
+
+  portNum = 0
+  invoke %int = java.lang.Integer( port$ )
+  invoke portNum = %int doubleValue()
+
+  result = 0
+  invoke result = %system activatePort( portNum )
+
+  if result = 1 then print %user "Activated port " + port$ + "!\r\n"
+  if result = 0 then print %user "Could not activate " + port$ + "!\r\n"
+  end
+
+removePort:
+  print %user "Attempting to deactivate port " + port$ + " ...\r\n"
+
+  portNum = 0
+  invoke %int = java.lang.Integer( port$ )
+  invoke portNum = %int doubleValue()
+
+  result = 0
+  invoke result = %system deactivatePort( portNum )
+
+  print %user "Deactivated port " + port$ + ".\r\n"
+  end

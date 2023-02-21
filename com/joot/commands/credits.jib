@@ -1,0 +1,7 @@
+' This program is run whenever the credits command is invoked
+
+print %user "----------------------------------------\r\n"
+print %user "JOOT v2.0 credits\r\n"
+print %user "----------------------------------------\r\n"
+print %user "Dave Jarvis (dj@joot.com) - JOOT Creator\r\n"
+

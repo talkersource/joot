@@ -1,0 +1,35 @@
+' This program is run whenever the who command is invoked
+
+name$ = ""
+myName$ = ""
+roomName$ = ""
+numUsers = 0
+totalUsers$ = ""
+
+invoke roomName$ = %room getName()
+
+print %user "-----------------------------------\r\n"
+print %user "With you in " + roomName$ + ": \r\n"
+print %user "-----------------------------------\r\n"
+
+invoke myName$ = %user getName()
+
+enum users in %room
+  invoke name$ = %enumuser getName()
+
+  if name$ = "" then print %user "An unknown person ...\r\n"
+  if name$ = myName$ then goto nextIter
+  if name$ <> "" then print %user name$ + "\r\n"
+
+  numUsers = numUsers + 1
+
+nextIter:
+enum
+
+print %user "-----------------------------------\r\n"
+
+totalUsers$ = "There are " + numUsers
+totalUsers$ = totalUsers$ + " other users with you."
+
+print %user totalUsers$ + "\r\n"
+print %user "-----------------------------------\r\n"

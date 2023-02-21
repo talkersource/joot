@@ -1,0 +1,32 @@
+' This program is run whenever a user connects to the system
+
+print %user "\r\nWelcome to a JOOT 2.0 system!\r\n"
+
+name$ = ""
+enumName$ = ""
+valid = 0
+
+loop:
+  print %user "Please type in your name: "
+  input %user name$
+  if name$ <> "" then valid = 1
+
+  enum users in %room
+    invoke enumName$ = %enumUser getName()
+    if enumName$ = name$ then valid = 0
+  enum
+
+  if valid = 1 then goto validName
+
+  print %user "\r\nThat is not a valid name, please try again.\r\n"
+  goto loop
+
+validName:
+  print %user "\r\n"
+
+  invoke enumName$ = %user setName( name$ )
+
+  enum users in %room
+    invoke enumName$ = %enumUser getName()
+    if enumName$ <> name$ then print %enumUser name$ + " has arrived!\r\n"
+  enum

@@ -1,0 +1,71 @@
+' This is the main execution loop.  Read a line of input from the
+' user and then do something with it until the user quits
+
+' Intialize constants
+SPACE$ = " "
+ONE = 1
+
+' Initialize variables.
+index = 0
+userTyped$ = ""
+firstCh$ = ""
+firstWord$ = ""
+
+' Create a reference to the String Util class.
+invoke %strUtil = com.joot.lib.StrUtil()
+
+mainLoop:
+  ' Read in a line of text from the user.
+  input %user userTyped$
+
+  ' Make sure we have something to parse.
+  if userTyped$ = "" then goto mainLoop
+
+  invoke firstCh$ = %strUtil leftStr( userTyped$, ONE )
+
+  ' If user's text began with a period [.] then it was a command.
+  if firstCh$ = "." then goto execCommand
+
+  if firstCh$ = ";" then goto execEmote
+
+  ' Otherwise, the default behaviour is the say command.
+  userTyped$ = ".say " + userTyped$
+
+  goto execCommand
+
+execEmote:
+  invoke userTyped$ = %strUtil rightStr( userTyped$, ONE )
+  userTyped$ = ".emote " + userTyped$
+
+' Fall through to execute the say/emote command.
+execCommand:
+  ' Separate the first word of what the user typed from the rest of the line.
+  invoke userTyped$ = %strUtil rightStr( userTyped$, ONE )
+  invoke index = %strUtil indexOf( userTyped$, SPACE$ )
+
+  lastWords$ = ""
+  firstWord$ = userTyped$
+
+  if index < 1 then goto noParams
+
+  invoke firstWord$ = %strUtil leftStr( userTyped$, index )
+  invoke lastWords$ = %strUtil rightStr( userTyped$, index )
+
+noParams:
+  ' From the short-hand command the user typed, figure out the
+  ' corresponding full command name.  It'd be faster to code this
+  ' statement in Java so that commands may be abbreviated "properly"
+  if firstWord$ = "q" then firstWord$ = "quit"
+  if firstWord$ = "w" then firstWord$ = "who"
+  if firstWord$ = "g" then firstWord$ = "go"
+  if firstWord$ = "h" then firstWord$ = "help"
+
+  ' Execute the command, using lastWord$ as an argument to it.
+  command$ = firstWord$ + ".jib"
+
+  run command$ lastWords$
+
+  goto mainLoop
+
+endLoop:
+  invoke command$ = %user disconnect()

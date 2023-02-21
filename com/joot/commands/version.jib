@@ -1,0 +1,4 @@
+' This program is run whenever the version command is invoked
+
+print %user "JOOT version 2.0 with JOOT's Interpreted BASIC (JIB) v1.0\r\n"
+

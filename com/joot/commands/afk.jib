@@ -1,0 +1,19 @@
+' This program is run whenever the afk command is invoked
+
+name$ = ""
+say$ = ""
+invoke name$ = %user getName()
+
+if arg$ <> "" then say$ = name$ + " " + arg$ + " -- AFK\r\n"
+if arg$ = "" then say$ = name$ + " has gone away from keboard -- AFK\r\n"
+
+enum users in %room
+  print %enumuser say$
+enum
+
+a$ = ""
+input %user a$
+
+enum users in %room
+  print %enumuser name$ + " has returned!\r\n"
+enum

@@ -1,0 +1,9 @@
+' This program is run whenever the shout command is invoked
+
+name$ = ""
+invoke name$ = %user getName()
+shout$ = name$ + " shouts: " + arg$ + "\r\n"
+
+enum users in %room
+  print %enumuser shout$
+enum

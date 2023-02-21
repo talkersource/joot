@@ -1,0 +1,16 @@
+' This program is run whenever the name command is invoked
+
+name$ = ""
+
+enum users in %room
+  invoke name$ = %enumuser getName()
+  if arg$ = name$ then goto nameTaken
+enum
+
+val = 0
+invoke val = %user setName( arg$ )
+print %user "Your new name is: '" + arg$ + "'\r\n"
+end
+
+nameTaken:
+print %user "It appears somebody is already using that name!\r\n"

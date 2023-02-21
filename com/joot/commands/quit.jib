@@ -1,0 +1,10 @@
+' This program is run whenever the quit command is invoked
+
+name$ = 0
+invoke name$ = %user getName()
+
+enum users in %room
+  print %enumuser name$ + " disappears in a blind flurry of marshmallows!\r\n"
+enum
+
+invoke name$ = %user disconnect()

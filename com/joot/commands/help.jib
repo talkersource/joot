@@ -1,0 +1,7 @@
+' This program is run whenever the help command is invoked
+
+print %user "JOOT Help -- Command Listing\r\n"
+print %user "----------------------------\r\n"
+print %user "Here are the available commands:\r\n\r\n"
+print %user "afk    help    quit    emote (;)   say   credits   echo\r\n"
+print %user "shout  port    who     name\r\n"

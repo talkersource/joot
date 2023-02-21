@@ -1,0 +1,9 @@
+' This program is run whenever the promote command is invoked
+
+name$ = ""
+invoke name$ = %user getName()
+say$ = name$ + " has promoted " + arg$ + " to the level of God!\r\n"
+
+enum users in %room
+  print %enumuser say$
+enum
