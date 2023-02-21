@@ -177,7 +177,7 @@ code in JIB.
 7.0	Web References
 
 	* JOOT's Official Homepage
-		http://www.joot.com/
+		https://dave.autonoma.ca/
 
 	* JavaSoft's Homepage, with Java Virtual Machines for
 	Windows and Solaris
